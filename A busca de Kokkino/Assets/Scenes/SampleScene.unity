@@ -372,7 +372,7 @@ MonoBehaviour:
   JumpForce: 2.5
   Speed: 1
   RunningSpeed: 2
-  RemainJump: 0
+  RemainJump: 2
   MaxJump: 1
   JumpingGratityScale: 0.4
   DefaultGratityScale: 0.75
