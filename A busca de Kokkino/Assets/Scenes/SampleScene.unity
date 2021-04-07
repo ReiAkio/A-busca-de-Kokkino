@@ -273,7 +273,7 @@ MonoBehaviour:
   Speed: 1
   RunningSpeed: 2
   RemainJump: 0
-  MaxJump: 5
+  MaxJump: 1
   JumpingGratityScale: 0.4
   DefaultGratityScale: 0.75
   HorizontalMovement: 0
@@ -412,7 +412,7 @@ GameObject:
   - component: {fileID: 2082707198}
   - component: {fileID: 2082707197}
   - component: {fileID: 2082707196}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

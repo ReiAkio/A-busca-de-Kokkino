@@ -10,6 +10,24 @@ public class PlayerController2 : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
     //private AnimationType currentAnimation;
+
+    private bool isLama;
+    private bool isGrounded;
+    private bool isPoison;
+    private bool isTrampolim;
+
+    public Transform feetPos;
+
+    public Rigidbody2D rb;
+
+    public float jumpForce;
+    public float checkRadius;
+
+    public LayerMask whatIsGround;
+    public LayerMask whatIsLama;
+    public LayerMask whatIsPoison;
+    public LayerMask whatIsTrampolim;
+
     [Header("Custom Properites for PlayerController")]
     public float JumpForce = 50;
     public float Speed = 20;
@@ -144,7 +162,7 @@ public class PlayerController2 : MonoBehaviour
     // {
     //     
     // }
-      
+
     // public enum AnimationType
     // {
     //     walk,
@@ -154,4 +172,39 @@ public class PlayerController2 : MonoBehaviour
     // }
     // public delegate void SampleEventHandler(AnimationType animationType,Vector2 direction);
     // public event SampleEventHandler ChangingAnimationEvent;
+
+   /* public void Lama()
+    {
+        isLama = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsLama);
+
+        if (isLama == true)
+        {
+            this.vel = 5f;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.velocity = UnityEngine.Vector2.up * (jumpForce / 2);
+            }
+        }
+    }*/
+
+    public void Poison()
+    {
+        isPoison = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsPoison);
+        if (isPoison == true)
+        {
+            Destroy(gameObject);
+
+        }
+    }
+
+    public void Trampolim()
+    {
+        isTrampolim = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsTrampolim);
+
+        if (isTrampolim == true)
+        {
+
+            rb.velocity = UnityEngine.Vector2.up * (jumpForce); ;
+        }
+    }
 }
