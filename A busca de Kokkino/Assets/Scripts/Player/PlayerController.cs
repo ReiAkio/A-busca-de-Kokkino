@@ -74,15 +74,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public bool Poison() //Funcao alterada para iniciar o evento de recarregar a cena
+    public void Poison()
     {
         isPoison = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsPoison);
         if (isPoison == true)
         {
-            return true;
+            Destroy(gameObject);
 
         }
-        return false;
     }
 
     public void Trampolim()
