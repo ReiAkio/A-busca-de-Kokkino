@@ -39,9 +39,8 @@ public class PlayerController : MonoBehaviour
         cc();
         Trampolim();
     }
-
-
-    private void Mover()
+   
+    private void Mover() 
     {
         if (isGrounded == true)
         {
@@ -50,10 +49,11 @@ public class PlayerController : MonoBehaviour
         float x = Input.GetAxisRaw("Horizontal");
         float moveBy = x * vel;
         rb.velocity = new UnityEngine.Vector2(moveBy, rb.velocity.y);
-    }
+    } 
 
     private void Pular()
     {
+ 
         if (isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = UnityEngine.Vector2.up * jumpForce;
