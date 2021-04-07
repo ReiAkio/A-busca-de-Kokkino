@@ -45,7 +45,6 @@ public class PlayerAnimationController : MonoBehaviour
         }
 
         AnimationSpeed = _playerController.CurrentSpeed * speedMultiplier;
-        print(nextAnimation);
         if (currentAnimation != nextAnimation)
         {
             _animator.Play(nextAnimation);

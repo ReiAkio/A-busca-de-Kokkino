@@ -24,8 +24,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/MovingScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/0.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/PlayerController2.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/PlayerAnimationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/PlayerController2.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qm1xybSiFDdGOsvZsCbJRn3Nrr" />
@@ -78,6 +78,7 @@
       <workItem from="1617670208654" duration="7120000" />
       <workItem from="1617715204273" duration="9421000" />
       <workItem from="1617734984589" duration="14883000" />
+      <workItem from="1617762541375" duration="363000" />
     </task>
     <servers />
   </component>
