@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.Events;
@@ -11,8 +12,9 @@ public class PlayerController2 : MonoBehaviour
     private Rigidbody2D _rigidbody;
     //private AnimationType currentAnimation;
 
-    
+
     [Header("Custom Properites for PlayerController")]
+    public float Angle = 135;
     public float JumpForce = 50;
     public float Speed = 20;
     public float RunningSpeed = 40;
@@ -28,6 +30,15 @@ public class PlayerController2 : MonoBehaviour
     public bool IsFalling;
     public bool IsWalking;
     public bool IsRunning;
+
+    [Header("Player Effects variables")] 
+    public float MudSpeedMultiplier = 0.5f;
+    public float TranpolineJumpPower = 5;
+    [Header("Player Effects")] 
+    public bool IsDead;
+
+    public bool IsOnMud;
+    public bool IsOnTrampoline;
     public bool IsGrounded
     {
         get { return GroudUnderPlayer.Count > 0; }
@@ -38,33 +49,80 @@ public class PlayerController2 : MonoBehaviour
     }
     
     public List<GameObject> GroudUnderPlayer = new List<GameObject>(); 
-    
-    private void OnCollisionEnter2D(Collision2D other)
+    public List<GameObject> TouchingThePlayer = new List<GameObject>();
+
+    private void UpdatePlayer()
     {
-        List<RaycastHit2D> results = new List<RaycastHit2D>();
-        Physics2D.Raycast(transform.position, -Vector2.up,new ContactFilter2D(),results);
-        foreach (RaycastHit2D hit2D in results)
+        IsDead = false;
+        IsOnMud = false;
+        IsOnTrampoline = false;
+        
+        foreach (GameObject ObjectsTouchingPlayer in TouchingThePlayer)
         {
-            if (hit2D.collider ==  other.collider)
+            string name = ObjectsTouchingPlayer.name;
+            if (name == "Poison" )
             {
-                CollidableObject collidableObject = other.gameObject.GetComponent<CollidableObject>();
-                if (collidableObject)
-                {
-                    IsFalling = false;
-                    RemainJump = MaxJump;
-                    GroudUnderPlayer.Add(other.gameObject);
-                }   
+                IsDead = true;
+            }
+
+            if (name == "Lama")
+            {
+                IsOnMud = true;
+                MudSpeedMultiplier = 0.5f;
+            }
+            else
+            {
+                MudSpeedMultiplier = 1f;
+            }
+
+            if (name == "Trampolim")
+            {
+                IsOnTrampoline = true;
+                IsJumping = true;
+                _rigidbody.velocity += Vector2.up * (JumpForce * MudSpeedMultiplier);
             }
         }
     }
-
-    void AlgumaCoisa()
+    private void OnCollisionEnter2D(Collision2D other)
     {
+        ContactPoint2D[] contactPoints = other.contacts;
+        bool isTheGround = true;
         
+        foreach (ContactPoint2D contactPoint in contactPoints)
+        {
+            Vector2 point = contactPoint.point;
+            Vector2 center = this.transform.position;
+
+            var AB = point - center;
+            if (!(Mathf.Cos(Angle / 2) < Vector2.Dot(AB, Vector2.down)))
+            {
+                Debug.DrawLine(center,point,Color.red,0.1f);
+                isTheGround = false;
+            }
+            else
+            {
+                Debug.DrawLine(center,point,Color.green,0.1f);
+            }
+        }
+        var otherGameObject = other.gameObject;
+        TouchingThePlayer.Add(otherGameObject);
+        if (isTheGround)
+        {
+            IsFalling = false;
+            RemainJump = MaxJump;
+            GroudUnderPlayer.Add(otherGameObject);
+            //return;
+            // }   
+        }
+
+        UpdatePlayer();
     }
+    
     private void OnCollisionExit2D(Collision2D other)
     {
+        TouchingThePlayer.Remove(other.gameObject);
         GroudUnderPlayer.Remove(other.gameObject);
+        UpdatePlayer();
     }
     void Start()
     {
@@ -74,10 +132,10 @@ public class PlayerController2 : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.S))
-        {
-           
-        }
+        // if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.S))
+        // {
+        //    
+        // }
 
         if (IsJumping && _rigidbody.velocity.y <= 0)
         {
@@ -86,12 +144,12 @@ public class PlayerController2 : MonoBehaviour
         }
 
 
-        bool JumpCommand = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
-        if ( JumpCommand && RemainJump > 0)
+        bool jumpCommand = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
+        if ( jumpCommand && RemainJump > 0)
         {
             RemainJump -= 1;
             IsJumping = true;
-            _rigidbody.velocity += Vector2.up * JumpForce;
+            _rigidbody.velocity += Vector2.up * (JumpForce * MudSpeedMultiplier);
         }
 
         if (IsJumping && Input.GetKey(KeyCode.Space))
@@ -134,7 +192,7 @@ public class PlayerController2 : MonoBehaviour
             IsRunning = false;
             IsWalking = true;
         }
-        _rigidbody.position += offset;
+        _rigidbody.position += offset * MudSpeedMultiplier;
         _rigidbody.velocity = new Vector2(
             Mathf.Clamp(_rigidbody.velocity.x, -60, 60),
             Mathf.Clamp(_rigidbody.velocity.y, -60, 50));
@@ -175,4 +233,7 @@ public class PlayerController2 : MonoBehaviour
             }
         }
     }*/
+   
 }
+
+
