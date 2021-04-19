@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 199175377}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -436,8 +436,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4dba77cdfe01d40bfac693820f4777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  feetPos: {fileID: 435566976}
   Angle: 135
-  JumpForce: 5
+  jumpForce: 2
   Speed: 2
   RunningSpeed: 4
   RemainJump: 2
@@ -446,6 +447,7 @@ MonoBehaviour:
   DefaultGratityScale: 0.75
   HorizontalMovement: 0
   CurrentSpeed: 0
+  checkRadius: 0
   IsJumping: 0
   IsFalling: 0
   IsWalking: 0
@@ -453,8 +455,22 @@ MonoBehaviour:
   MudSpeedMultiplier: 0.5
   TranpolineJumpPower: 5
   IsDead: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
+  whatIsLama:
+    serializedVersion: 2
+    m_Bits: 256
+  whatIsPoison:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsTrampolim:
+    serializedVersion: 2
+    m_Bits: 128
   IsOnMud: 0
   IsOnTrampoline: 0
+  isOnGround: 0
+  isOnPoison: 0
   GroudUnderPlayer: []
   TouchingThePlayer: []
 --- !u!95 &199175376
@@ -1600,6 +1616,7 @@ GameObject:
   - component: {fileID: 1331889926}
   - component: {fileID: 1331889925}
   - component: {fileID: 1331889924}
+  - component: {fileID: 1331889927}
   m_Layer: 5
   m_Name: BlackFade
   m_TagString: Untagged
@@ -1683,6 +1700,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331889922}
   m_CullTransparentMesh: 1
+--- !u!114 &1331889927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331889922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ecfa151e82a35e498b9a4f9c9a7856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1366885126
 GameObject:
   m_ObjectHideFlags: 0

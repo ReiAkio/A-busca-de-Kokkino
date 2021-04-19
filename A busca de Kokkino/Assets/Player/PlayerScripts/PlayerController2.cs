@@ -9,13 +9,16 @@ using UnityEngine.EventSystems;
 
 public class PlayerController2 : MonoBehaviour
 {
+    //OBS: Edit do Rapha -> Fragmentar mais o código em funcões, muito procedural gera dificuldade do acoplamento com as outras partes do projeto
+
     private Rigidbody2D _rigidbody;
+    public Transform feetPos;
     //private AnimationType currentAnimation;
 
 
     [Header("Custom Properites for PlayerController")]
     public float Angle = 135;
-    public float JumpForce = 50;
+    public float jumpForce = 50;
     public float Speed = 20;
     public float RunningSpeed = 40;
     public int RemainJump = 0;
@@ -24,6 +27,7 @@ public class PlayerController2 : MonoBehaviour
     public float DefaultGratityScale = 12;
     public float HorizontalMovement;
     public float CurrentSpeed;
+    public float checkRadius;
 
     [Header("Player movement status")]
     public bool IsJumping;
@@ -37,8 +41,18 @@ public class PlayerController2 : MonoBehaviour
     [Header("Player Effects")] 
     public bool IsDead;
 
+    [Header("Player ground interaction Status")]
+    public LayerMask whatIsGround;
+    public LayerMask whatIsLama;
+    public LayerMask whatIsPoison;
+    public LayerMask whatIsTrampolim;
+    
     public bool IsOnMud;
     public bool IsOnTrampoline;
+    public bool isOnGround;
+    public bool isOnPoison;
+
+    
     public bool IsGrounded
     {
         get { return GroudUnderPlayer.Count > 0; }
@@ -79,7 +93,7 @@ public class PlayerController2 : MonoBehaviour
             {
                 IsOnTrampoline = true;
                 IsJumping = true;
-                _rigidbody.velocity += Vector2.up * (JumpForce * MudSpeedMultiplier);
+                _rigidbody.velocity += Vector2.up * (jumpForce * MudSpeedMultiplier);
             }
         }
     }
@@ -137,6 +151,11 @@ public class PlayerController2 : MonoBehaviour
         //    
         // }
 
+        Lama();
+        Poison();
+        Trampolim();
+        Ground();
+
         if (IsJumping && _rigidbody.velocity.y <= 0)
         {
             IsJumping = false;
@@ -149,7 +168,7 @@ public class PlayerController2 : MonoBehaviour
         {
             RemainJump -= 1;
             IsJumping = true;
-            _rigidbody.velocity += Vector2.up * (JumpForce * MudSpeedMultiplier);
+            _rigidbody.velocity += Vector2.up * (jumpForce * MudSpeedMultiplier);
         }
 
         if (IsJumping && Input.GetKey(KeyCode.Space))
@@ -205,6 +224,46 @@ public class PlayerController2 : MonoBehaviour
         // }
     }
 
+    private void Ground()
+    {
+        isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+    }
+    public void Lama()
+    {
+        IsOnMud = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsLama);
+
+        if (IsOnMud == true)
+        {
+            this.Speed = 5f;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                _rigidbody.velocity = UnityEngine.Vector2.up * (jumpForce / 2);
+            }
+        }
+    }
+
+    public void Poison()
+    {
+        isOnPoison = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsPoison);
+        if (isOnPoison == true)
+        {
+            IsDead = true;
+
+        }
+        IsDead = false;
+    }
+
+    public void Trampolim()
+    {
+        IsOnTrampoline = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsTrampolim);
+
+        if (IsOnTrampoline == true)
+        {
+
+            _rigidbody.velocity = UnityEngine.Vector2.up * (jumpForce); ;
+        }
+    }
+
     // private AnimationType GetThisFrameAnimation()
     // {
     //     
@@ -220,20 +279,20 @@ public class PlayerController2 : MonoBehaviour
     // public delegate void SampleEventHandler(AnimationType animationType,Vector2 direction);
     // public event SampleEventHandler ChangingAnimationEvent;
 
-   /* public void Lama()
-    {
-        isLama = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsLama);
+    /* public void Lama()
+     {
+         isLama = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsLama);
 
-        if (isLama == true)
-        {
-            this.vel = 5f;
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                rb.velocity = UnityEngine.Vector2.up * (jumpForce / 2);
-            }
-        }
-    }*/
-   
+         if (isLama == true)
+         {
+             this.vel = 5f;
+             if (Input.GetKeyDown(KeyCode.Space))
+             {
+                 rb.velocity = UnityEngine.Vector2.up * (jumpForce / 2);
+             }
+         }
+     }*/
+
 }
 
 
