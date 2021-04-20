@@ -70,10 +70,10 @@ public class PlayerController2 : MonoBehaviour
         IsDead = false;
         IsOnMud = false;
         IsOnTrampoline = false;
-        
-        foreach (GameObject ObjectsTouchingPlayer in TouchingThePlayer)
+
+        foreach (GameObject ObjectsTouchingPlayer in TouchingThePlayer) // Padrao de identificacao dos objetos --->> Layers e Tags
         {
-            string name = ObjectsTouchingPlayer.name;
+            string name = ObjectsTouchingPlayer.name; //Alterar para comparar com as TAGS para o código ficar compatível com outras implementacões
             if (name == "Poison" )
             {
                 IsDead = true;
