@@ -300,8 +300,9 @@ GameObject:
   - component: {fileID: 199175372}
   - component: {fileID: 199175374}
   - component: {fileID: 199175371}
-  - component: {fileID: 199175375}
   - component: {fileID: 199175376}
+  - component: {fileID: 199175378}
+  - component: {fileID: 199175375}
   - component: {fileID: 199175377}
   m_Layer: 0
   m_Name: Player
@@ -507,6 +508,18 @@ MonoBehaviour:
   currentAnimation: 
   AnimationSpeed: 1
   speedMultiplier: 1
+--- !u!114 &199175378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199175370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf85427a21c38740acab94616d27bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &434916442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,6 +1591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1138902794}
+  - component: {fileID: 1138902795}
   m_Layer: 0
   m_Name: CheckPointManager
   m_TagString: CM
@@ -1604,6 +1618,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138902795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138902793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c81f0f4934c8cf43b32b3e15498d237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastCheckpointPos: {x: 0, y: 0}
+  checkPointactivated: []
 --- !u!1 &1331889922
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,5 +18,4 @@ public class Checkpoint : MonoBehaviour
         //Instancia o checkpointmanager
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckPointManager>();
     }
-
 }

@@ -245,7 +245,7 @@ public class PlayerController2 : MonoBehaviour
     public void Poison()
     {
         isOnPoison = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsPoison);
-        if (isOnPoison == true)
+        if (isOnPoison)
         {
             IsDead = true;
 
