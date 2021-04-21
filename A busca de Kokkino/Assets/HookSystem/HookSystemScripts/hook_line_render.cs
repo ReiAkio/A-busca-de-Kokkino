@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class hook_line_render : MonoBehaviour
 {
-    public LineRenderer hookLineRender;
-    public DistanceJoint2D hookDistanceJoint;
-    public Transform playerPosition;
-    void Start()
-    {
-        
-    }
+    public LineRenderer hookLineRender;               // Instancia para Line Renderer
+    public DistanceJoint2D hookDistanceJoint;         // Instancia para Distance Joint 2D
+    public Transform playerPosition;                  // Instancia para Transform do jogador
 
-    // Update is called once per frame
     void Update()
     {
         positionAdjust();
     }
 
+    //
+    // Resumo:
+    //     Realiza o ajuste nas posicões dos vetores do Line Renderer
+    //
 void positionAdjust()
     {
         Rigidbody2D connectedBodyToJoint = hookDistanceJoint.connectedBody; // Instancia o Rigidbody2D do objeto conectado ao Distance Joint 2D
@@ -36,7 +35,5 @@ void positionAdjust()
         }       
 
     }
-
-
 
 }
