@@ -152,10 +152,20 @@ public class PlayerController2 : MonoBehaviour
         // }
 
         Lama();
-        Poison();
         Trampolim();
         Ground();
+        Move();
+        Poison();
+        // AnimationType thisFrameAnimation = GetThisFrameAnimation();
+        // if (thisFrameAnimation != currentAnimation)
+        // {
+        //     currentAnimation = thisFrameAnimation;
+        //     ChangingAnimationEvent?.Invoke(thisFrameAnimation,MovingDirection);
+        // }
+    }
 
+    private void Move()
+    {
         if (IsJumping && _rigidbody.velocity.y <= 0)
         {
             IsJumping = false;
@@ -164,7 +174,7 @@ public class PlayerController2 : MonoBehaviour
 
 
         bool jumpCommand = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
-        if ( jumpCommand && RemainJump > 0)
+        if (jumpCommand && RemainJump > 0)
         {
             RemainJump -= 1;
             IsJumping = true;
@@ -181,7 +191,7 @@ public class PlayerController2 : MonoBehaviour
         }
 
         HorizontalMovement = Input.GetAxis("Horizontal");
-        
+
         bool RunningButton = Input.GetKey(KeyCode.LeftControl);
 
 
@@ -189,19 +199,20 @@ public class PlayerController2 : MonoBehaviour
         if (RunningButton)
         {
             CurrentSpeed = RunningSpeed;
-            offset = new Vector2(HorizontalMovement * RunningSpeed * Time.deltaTime,0);
+            offset = new Vector2(HorizontalMovement * RunningSpeed * Time.deltaTime, 0);
         }
         else
         {
             CurrentSpeed = Speed;
-            offset = new Vector2(HorizontalMovement * Speed * Time.deltaTime,0);
+            offset = new Vector2(HorizontalMovement * Speed * Time.deltaTime, 0);
         }
 
         if (offset.x == 0)
         {
             IsWalking = false;
             IsRunning = false;
-        }else if (RunningButton)
+        }
+        else if (RunningButton)
         {
             IsRunning = true;
             IsWalking = false;
@@ -215,15 +226,7 @@ public class PlayerController2 : MonoBehaviour
         _rigidbody.velocity = new Vector2(
             Mathf.Clamp(_rigidbody.velocity.x, -60, 60),
             Mathf.Clamp(_rigidbody.velocity.y, -60, 50));
-        
-        // AnimationType thisFrameAnimation = GetThisFrameAnimation();
-        // if (thisFrameAnimation != currentAnimation)
-        // {
-        //     currentAnimation = thisFrameAnimation;
-        //     ChangingAnimationEvent?.Invoke(thisFrameAnimation,MovingDirection);
-        // }
     }
-
     private void Ground()
     {
         isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);

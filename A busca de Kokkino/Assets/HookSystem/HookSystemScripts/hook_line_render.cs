@@ -15,25 +15,21 @@ public class hook_line_render : MonoBehaviour
 
     //
     // Resumo:
-    //     Realiza o ajuste nas posicões dos vetores do Line Renderer
-    //
+    //     Realiza o ajuste nas posicões dos vetores do Line Renderer.
 void positionAdjust()
     {
-        Rigidbody2D connectedBodyToJoint = hookDistanceJoint.connectedBody; // Instancia o Rigidbody2D do objeto conectado ao Distance Joint 2D
+        Rigidbody2D connectedBodyToJoint = hookDistanceJoint.connectedBody;                             // Instancia o Rigidbody2D do objeto conectado ao Distance Joint 2D
 
-        if (connectedBodyToJoint) {            // É executado quando Distance Joint 2D está conectado a outro objeto
+        if (connectedBodyToJoint && hookDistanceJoint.isActiveAndEnabled){                              // É executado quando Distance Joint 2D está conectado a outro objeto e ativo
+                hookLineRender.enabled = true;                                                          // Habilita a exibicão do Line Renderer
+                hookLineRender.SetPosition(1, connectedBodyToJoint.transform.position);                 // Define a posicão final do Distance Joint 2D
+                hookLineRender.SetPosition(0, playerPosition.transform.position);                       // Define a posicão inicial do Distance Joint 2D
+            }
+        
+        else {                                                                                          // É executado quando Distance Joint 2D NÃO está conectado a outro objeto (NULL REFERENCE EXEPTION) ou inativo
 
-            hookLineRender.enabled = true;                                                          // Habilita a exibicão do Line Renderer
-            hookLineRender.SetPosition(1, connectedBodyToJoint.transform.position);                 // Define a posicão final do Distance Joint 2D
-            hookLineRender.SetPosition(0, playerPosition.transform.position);                       // Define a posicão inicial do Distance Joint 2D
+            hookLineRender.enabled = false;                                                             // Desabilita a exibicão do Line Renderer
 
-        }
-        else {                                 // É executado quando Distance Joint 2D NÃO está conectado a outro objeto --> NULL REFERENCE EXEPTION
-
-            hookLineRender.enabled = false;                                                         // Desabilita a exibicão do Line Renderer
-
-        }       
-
+        }      
     }
-
 }
