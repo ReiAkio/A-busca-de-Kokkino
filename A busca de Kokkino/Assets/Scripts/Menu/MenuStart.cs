@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MenuStart : MonoBehaviour
 {
+    public string LoadScene;
     public void HandlePlayButtonOnClickEvent()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(LoadScene);
     }
 
 }

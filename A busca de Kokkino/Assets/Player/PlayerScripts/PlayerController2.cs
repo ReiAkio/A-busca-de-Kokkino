@@ -100,7 +100,7 @@ public class PlayerController2 : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         ContactPoint2D[] contactPoints = other.contacts;
-        bool isTheGround = true;
+        bool isTheGround = true; //Pode colidir com objetos fora do chão ----> refatorar
         
         foreach (ContactPoint2D contactPoint in contactPoints)
         {
@@ -108,7 +108,7 @@ public class PlayerController2 : MonoBehaviour
             Vector2 center = this.transform.position;
 
             var AB = point - center;
-            if (!(Mathf.Cos(Angle / 2) < Vector2.Dot(AB, Vector2.down)))
+            if (!(Mathf.Cos(Angle / 2) < Vector2.Dot(AB, Vector2.down))) //Comentários?
             {
                 Debug.DrawLine(center,point,Color.red,0.1f);
                 isTheGround = false;
