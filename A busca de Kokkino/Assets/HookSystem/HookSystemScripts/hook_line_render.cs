@@ -16,7 +16,7 @@ public class hook_line_render : MonoBehaviour
     //
     // Resumo:
     //     Realiza o ajuste nas posicões dos vetores do Line Renderer.
-void positionAdjust()
+private void positionAdjust()
     {
         Rigidbody2D connectedBodyToJoint = hookDistanceJoint.connectedBody;                             // Instancia o Rigidbody2D do objeto conectado ao Distance Joint 2D
 

@@ -61,7 +61,7 @@ public class HookManager : MonoBehaviour
     // Parâmetros:
     //   anchor:
     //     O objeto Anchorpoint cuja distancia será calculada até o Player.
-    double distancePlayerAnchor(GameObject anchor)
+    private double distancePlayerAnchor(GameObject anchor)
     {
         double xPlayer = playerPosition_hm.transform.position.x;
         double yPlayer = playerPosition_hm.transform.position.y;
@@ -75,7 +75,7 @@ public class HookManager : MonoBehaviour
     //
     // Resumo:
     //     Retorna se existe algum corpo já conectado ao Distance Joint 2D.
-    bool hasConnectedBody()
+    public bool hasConnectedBody()
     {
         if (distanceJoint_hm.connectedBody) // Verifica se existe um corpo conectado ao Distance Joint 2D
             return true;
@@ -89,7 +89,7 @@ public class HookManager : MonoBehaviour
     // Parâmetros:
     //   anchor:
     //     O objeto Anchorpoint que será verificado se está na distancia definida.
-    bool isAnchoInRange(GameObject anchor)
+    private bool isAnchoInRange(GameObject anchor)
     {
         if (distancePlayerAnchor(anchor) <= anchorMinRange) // Verifica se a distancia do objeto está dentro da definida como mínima para iteracões
             return true;
@@ -100,7 +100,7 @@ public class HookManager : MonoBehaviour
     // Resumo:
     //     Realiza a verificacão do alcance e, se dentro do limite de interacão
     //     conecta o Distance Joint 2D ao corpo referido como dentro do limite.
-    void connectToCloserInRangeHook()
+    private void connectToCloserInRangeHook()
     {
         if (!hasConnectedBody()) // Acões se não estiver conectado previamente a um Anchorpoint
         {
@@ -132,7 +132,7 @@ public class HookManager : MonoBehaviour
     // Resumo:
     //     Ao pressionar da tecla pré-definida, desconecta o Distance Joint 2D
     //     de qualquer Anchorpoint conectado.
-    void releaseConnectedHook()
+    private void releaseConnectedHook()
     {
         if (hasConnectedBody())
         {
@@ -148,7 +148,7 @@ public class HookManager : MonoBehaviour
     // Resumo:
     //     Altera a cor dos Anchorpoints os quais o jogador pode se conectar
     //     pressionando a tecla de interacão pré-definida.
-    void inRangeHookTracker()
+    private void inRangeHookTracker()
     {
         GameObject atualAnchor = findAnchorInLowerRange();
         if (isAnchoInRange(atualAnchor)) // Verifica se o Anchorpoint mais próximo está dentro do alcance pré-definido
