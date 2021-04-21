@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CM
   - Checkpoint
+  - Anchorpoint
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Poison
   - Trampolim
   - Lama
-  - 
+  - Hook
   - 
   - 
   - 
