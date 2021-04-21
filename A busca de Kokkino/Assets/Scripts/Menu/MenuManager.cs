@@ -16,6 +16,10 @@ public static class MenuManager
             case MenuName.Pause:
                 Object.Instantiate(Resources.Load("Pause"));
                 break;
+
+            case MenuName.VoltarMainMenu:
+                SceneManager.LoadScene("Inicio");
+                break;
         }
     }
 }
