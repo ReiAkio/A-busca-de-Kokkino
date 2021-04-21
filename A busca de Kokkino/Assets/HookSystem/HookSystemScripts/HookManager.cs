@@ -4,21 +4,24 @@ using UnityEngine;
 using static System.Math;
 
 public class HookManager : MonoBehaviour
-{
+{   
+    // Instancias
+    public Transform playerPosition_hm;         // Instancia a posicão atual do jogador (utilizado para cálculos de distância)
+    public DistanceJoint2D distanceJoint_hm;    // Instancia o Distance Joint 2D atribuido ao jogador
+
     // Variáveis uteis para a classe
     private GameObject[] anchorPoints;          // Array com todos os Anchorpoints da cena
     private GameObject lastAnchorInRange;       // Armazena o último Anchorpoint no alcance
     private Color AnchorColor;                  // Armazena a cor do anchorpoint
 
-    // Configuracões dev/usuários
+    [Header("Custom Properites")]
     public double anchorMinRange;               // Define qual a distância minima para o player conseguir se conectar ao Anchorpoint
     public KeyCode hookActivationKey;           // Define qual a tecla que quando pressionada conecta o player ao Anchorpoint
     public KeyCode releaseHookKey;              // Define qual a tecla que quando pressionada desconecta o player ao Anchorpoint
     public string anchorpointTag;               // Recebe qual a tag atribuida aos Anchorpoints da cena
     public Color selectedAnchorColor;           // Armazena a cor que será atribuida aos Anchorpoints dentro do alcance do player
 
-    public Transform playerPosition_hm;         // Instancia a posicão atual do jogador (utilizado para cálculos de distância)
-    public DistanceJoint2D distanceJoint_hm;    // Instancia o Distance Joint 2D atribuido ao jogador
+    
     
     void Start()
     {
