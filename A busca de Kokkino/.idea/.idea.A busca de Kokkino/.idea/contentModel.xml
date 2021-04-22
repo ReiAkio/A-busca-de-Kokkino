@@ -7,21 +7,48 @@
       <e p="A busca de Kokkino.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Scripts" t="Include">
-          <e p="CustomPlayer" t="Include">
-            <e p="CollidableObject.cs" t="Include" />
-            <e p="PlayerAnimationController.cs" t="Include" />
-            <e p="PlayerController2.cs" t="Include" />
+        <e p="CheckPointSystem" t="Include">
+          <e p="CheckPointSystemScripts" t="Include">
+            <e p="Checkpoint.cs" t="Include" />
+            <e p="CheckPointManager.cs" t="Include" />
           </e>
-          <e p="DialogueSystem" t="Include">
+        </e>
+        <e p="DialogueSystem" t="Include">
+          <e p="DialogueSystemScripts" t="Include">
             <e p="CharacterProfile.cs" t="Include" />
             <e p="DialogueBase.cs" t="Include" />
             <e p="DialogueManager.cs" t="Include" />
             <e p="DialogueTrigger.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
           </e>
-          <e p="Player" t="Include">
+        </e>
+        <e p="FaderSystem" t="Include">
+          <e p="FaderScripts" t="Include">
+            <e p="FaderController.cs" t="Include" />
+          </e>
+        </e>
+        <e p="HookSystem" t="Include">
+          <e p="HookSystemScripts" t="Include">
+            <e p="hook_line_render.cs" t="Include" />
+            <e p="HookManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Player" t="Include">
+          <e p="PlayerScripts" t="Include">
+            <e p="PlayerAnimationController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="PlayerController2.cs" t="Include" />
+            <e p="PlayerManager.cs" t="Include" />
+            <e p="PlayerPosition.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Menu" t="Include">
+            <e p="MenuManager.cs" t="Include" />
+            <e p="MenuName.cs" t="Include" />
+            <e p="MenuPause.cs" t="Include" />
+            <e p="MenuStart.cs" t="Include" />
+            <e p="Rodando.cs" t="Include" />
           </e>
         </e>
       </e>

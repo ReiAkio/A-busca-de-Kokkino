@@ -18,6 +18,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Player/PlayerScripts/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/CollidableObject.cs" />
@@ -26,6 +29,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/0.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/PlayerAnimationController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/PlayerController2.cs" />
+      <option value="$PROJECT_DIR$/Assets/Player/PlayerScripts/PlayerManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qm1xybSiFDdGOsvZsCbJRn3Nrr" />
@@ -81,6 +85,7 @@
       <workItem from="1617762541375" duration="363000" />
       <workItem from="1617881972797" duration="11885000" />
       <workItem from="1617897619833" duration="368000" />
+      <workItem from="1619041495539" duration="4169000" />
     </task>
     <servers />
   </component>

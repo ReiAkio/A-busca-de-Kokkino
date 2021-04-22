@@ -454,7 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   feetPos: {fileID: 435566976}
   Angle: 135
-  jumpForce: 2
+  jumpForce: 4
   Speed: 2
   RunningSpeed: 4
   RemainJump: 2
@@ -1157,13 +1157,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30235d77cfc245848bff5e61229b0584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPosition_hm: {fileID: 199175373}
+  distanceJoint_hm: {fileID: 199175379}
   anchorMinRange: 5
   hookActivationKey: 101
   releaseHookKey: 32
   anchorpointTag: Anchorpoint
   selectedAnchorColor: {r: 0.7735849, g: 0.61001825, b: 0.4780171, a: 1}
-  playerPosition_hm: {fileID: 199175373}
-  distanceJoint_hm: {fileID: 199175379}
 --- !u!1 &567520656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1218,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12.771039
+  orthographic size: 5.57
   m_Depth: -100
   m_CullingMask:
     serializedVersion: 2
