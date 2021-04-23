@@ -138,6 +138,8 @@ public class PlayerController2 : MonoBehaviour
         GroudUnderPlayer.Remove(other.gameObject);
         UpdatePlayer();
     }
+
+
     void Start()
     {
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
