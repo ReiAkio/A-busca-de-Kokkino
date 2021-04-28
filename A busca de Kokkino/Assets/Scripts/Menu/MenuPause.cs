@@ -14,6 +14,7 @@ public class MenuPause : MonoBehaviour
     {
         Time.timeScale = 1;
         Destroy(gameObject);
+        Rodando.foi = true;
     }
 
     public void HandleVoltarMainMenuButtonOnClickEvent()
