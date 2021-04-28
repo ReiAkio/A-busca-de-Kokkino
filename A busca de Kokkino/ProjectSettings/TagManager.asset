@@ -8,6 +8,7 @@ TagManager:
   - Checkpoint
   - Anchorpoint
   - HitBox
+  - Spike
   layers:
   - Default
   - TransparentFX
