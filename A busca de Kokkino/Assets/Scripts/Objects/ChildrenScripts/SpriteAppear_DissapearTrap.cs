@@ -1,0 +1,60 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SpriteAppear_DissapearTrap : TrapActivation
+{
+    // Classe utilizada para objetos que possuem Renderer e Collider2D do tipo Sprite e Polygon, respectivamente.
+
+    public float timeUntillActivation;      // Tempo (em segundos) antes do objeto alterar seu estado inicial
+    public float timeWhileActivated;        // Tempo (em segundos) antes do objeto retornar ao seu estado inicial
+    public bool initialState;               // Estado inicial do objeto (true = ativado / false = desativado)
+
+    //
+    // Resumo:
+    //     Ajusta as configuracões iniciais do objeto ao ser instanciado
+    private void Awake()
+    {
+        this.GetComponent<SpriteRenderer>().enabled = initialState;        // Designa o estado inicial ao SpriteRenderer
+        this.GetComponent<PolygonCollider2D>().enabled = initialState;      // Designa o estado inicial ao PolygonCollider2D
+    }
+
+    //
+    // Resumo:
+    //     Executa trapWorking() a cada frame.
+    private void Update()
+    {
+        trapWorking();
+    }
+
+    //
+    // Resumo:
+    //     Implementacão da acão temporária do objeto.
+    protected override void temporaryAction()
+    {
+        StartCoroutine(ExecuteForSomeTime());
+    }
+
+    //
+    // Resumo:
+    //     Implementacão da acão permanente do objeto.
+    protected override void permanentAction()
+    {
+        // Sem implementacão - sem acão permanente
+    }
+
+    //
+    // Resumo:
+    //     Altera por um certo tempo pré definido o estado do objeto, e depois
+    //     o retorna ao seu estado original depois de outro tempo pré definido.
+    private IEnumerator ExecuteForSomeTime()
+    {
+        yield return new WaitForSeconds(timeUntillActivation);                 // Aguarda um tempo antes da mudanca de estado
+        this.GetComponent<SpriteRenderer>().enabled = !initialState;          // Altera o estado inicial do SpriteRenderer
+        this.GetComponent<PolygonCollider2D>().enabled = !initialState;        // Altera o estado inicia do PolygonCollider2D
+
+        yield return new WaitForSeconds(timeWhileActivated);                   // Aguarda um tempo antes de retornar ao estado inicial
+        this.GetComponent<SpriteRenderer>().enabled = initialState;           // Retorna ao estado inicial o SpriteRenderer
+        this.GetComponent<PolygonCollider2D>().enabled = initialState;         // Retorna ao estado inicial o PolygonCollider2D
+    }
+}
