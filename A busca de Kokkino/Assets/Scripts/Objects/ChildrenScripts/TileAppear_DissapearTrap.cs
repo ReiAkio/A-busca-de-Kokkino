@@ -58,4 +58,14 @@ public class TileAppear_DissapearTrap : TrapActivation
         this.GetComponent<TilemapRenderer>().enabled = initialState;           // Retorna ao estado inicial o TilemapRenderer
         this.GetComponent<TilemapCollider2D>().enabled = initialState;         // Retorna ao estado inicial o TilemapCollider2D
     }
+
+    //
+    // Resumo:
+    //     Verifica se existe um componente (especifico do player) na colisão e marca como morto o player se existir.
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        PlayerController2 player = collision.GetComponent<PlayerController2>();
+        if (player != null)
+            player.IsDead = true;
+    }
 }

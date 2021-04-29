@@ -57,4 +57,14 @@ public class SpriteAppear_DissapearTrap : TrapActivation
         this.GetComponent<SpriteRenderer>().enabled = initialState;           // Retorna ao estado inicial o SpriteRenderer
         this.GetComponent<PolygonCollider2D>().enabled = initialState;         // Retorna ao estado inicial o PolygonCollider2D
     }
+
+    //
+    // Resumo:
+    //     Verifica se existe um componente (especifico do player) na colisão e marca como morto o player se existir.
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        PlayerController2 player = collision.GetComponent<PlayerController2>();
+        if (player != null)
+            player.IsDead = true;
+    }
 }
