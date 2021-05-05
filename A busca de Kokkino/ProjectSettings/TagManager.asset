@@ -9,6 +9,8 @@ TagManager:
   - Anchorpoint
   - HitBox
   - Spike
+  - Inventoryslot
+  - Inventory
   layers:
   - Default
   - TransparentFX

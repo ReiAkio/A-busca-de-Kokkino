@@ -7,6 +7,7 @@ public class CheckPointManager : MonoBehaviour
     private static CheckPointManager instance;
     public Vector2 lastCheckpointPos;               //Armazena a posicão do ultimo checkpoint atingido
     public List<Vector2> checkPointactivated;       //Armazena uma lista com a posicão de todos os checkpoints salvos (para previnir o ressalvamento)
+    
     private GameObject player;
 
     void Awake() //Garante a existência de apenas um checkpointmanager (que mantém suas propriedades ao recarregar cenas)
