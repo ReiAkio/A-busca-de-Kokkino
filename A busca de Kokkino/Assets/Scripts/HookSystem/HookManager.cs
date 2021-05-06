@@ -40,7 +40,7 @@ public class HookManager : MonoBehaviour
     //
     // Resumo:
     //    Retorna o Anchorpoint mais próximo do Player.
-    GameObject findAnchorInLowerRange()
+    public GameObject findAnchorInLowerRange()
     {
         int lowerIndex = 0;
         double lowerDistance = distancePlayerAnchor(anchorPoints[lowerIndex]);

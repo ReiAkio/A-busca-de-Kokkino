@@ -57,6 +57,7 @@ public class PlayerController2 : MonoBehaviour
     {
         get { return GroudUnderPlayer.Count > 0; }
     }
+
     public bool IsIdle
     {
         get { return IsGrounded && !IsJumping && !IsFalling && !IsWalking && !IsRunning; }
@@ -102,12 +103,13 @@ public class PlayerController2 : MonoBehaviour
         ContactPoint2D[] contactPoints = other.contacts;
         bool isTheGround = true; //Pode colidir com objetos fora do chão ----> refatorar
         
-        foreach (ContactPoint2D contactPoint in contactPoints)
+        foreach (ContactPoint2D contactPoint in contactPoints) // -------------------------------- ESQUECE
         {
-            Vector2 point = contactPoint.point;
-            Vector2 center = this.transform.position;
+            Vector2 point = contactPoint.point;             // Ponto onde ocorre o contato
+            Vector2 center = this.transform.position;       // Posicao do jogador
 
-            var AB = point - center;
+            var AB = point - center;                        
+
             if (!(Mathf.Cos(Angle / 2) < Vector2.Dot(AB, Vector2.down))) //Comentários?
             {
                 Debug.DrawLine(center,point,Color.red,0.1f);
@@ -117,9 +119,9 @@ public class PlayerController2 : MonoBehaviour
             {
                 Debug.DrawLine(center,point,Color.green,0.1f);
             }
-        }
+        }                                                      // --------------------------------- ESQUECE
         var otherGameObject = other.gameObject;
-        TouchingThePlayer.Add(otherGameObject);
+        TouchingThePlayer.Add(otherGameObject);         // Adiciona ao vetor de objetos tocando no jogador
         if (isTheGround)
         {
             IsFalling = false;
@@ -136,7 +138,7 @@ public class PlayerController2 : MonoBehaviour
     {
         TouchingThePlayer.Remove(other.gameObject);
         GroudUnderPlayer.Remove(other.gameObject);
-        UpdatePlayer();
+        UpdatePlayer();                                 // talvez possa ser excluído
     }
 
 
@@ -168,14 +170,14 @@ public class PlayerController2 : MonoBehaviour
 
     private void Move()
     {
-        if (IsJumping && _rigidbody.velocity.y <= 0)
+        if (IsJumping && _rigidbody.velocity.y <= 0)        // Atualizacao de status
         {
             IsJumping = false;
             IsFalling = true;
         }
 
 
-        bool jumpCommand = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);
+        bool jumpCommand = Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W);  // Teclas para pulo
         if (jumpCommand && RemainJump > 0)
         {
             RemainJump -= 1;
@@ -183,13 +185,13 @@ public class PlayerController2 : MonoBehaviour
             _rigidbody.velocity += Vector2.up * (jumpForce * MudSpeedMultiplier);
         }
 
-        if (IsJumping && Input.GetKey(KeyCode.Space))
+        if (IsJumping && Input.GetKey(KeyCode.Space)) //Segurando espaco --> pula mais alto / fica mais tempo no ar
         {
             _rigidbody.gravityScale = JumpingGratityScale;
         }
         else
         {
-            _rigidbody.gravityScale = DefaultGratityScale;
+            _rigidbody.gravityScale = DefaultGratityScale; //Sem segurar espaco -> cai mais rápido
         }
 
         HorizontalMovement = Input.GetAxis("Horizontal");
@@ -209,7 +211,7 @@ public class PlayerController2 : MonoBehaviour
             offset = new Vector2(HorizontalMovement * Speed * Time.deltaTime, 0);
         }
 
-        if (offset.x == 0)
+        if (offset.x == 0)          // ta feio
         {
             IsWalking = false;
             IsRunning = false;
@@ -227,11 +229,11 @@ public class PlayerController2 : MonoBehaviour
         _rigidbody.position += offset * MudSpeedMultiplier;
         _rigidbody.velocity = new Vector2(
             Mathf.Clamp(_rigidbody.velocity.x, -60, 60),
-            Mathf.Clamp(_rigidbody.velocity.y, -60, 50));
+            Mathf.Clamp(_rigidbody.velocity.y, -60, 50));       // Não deixa velocidade ultrapassar o limite maximo e minimo
     }
     private void Ground()
     {
-        isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+        isOnGround = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround); //Verifica se whatIsGround ocorre dentro do raio (checkradius) a partir do ponto feet.position
     }
     public void Lama()
     {

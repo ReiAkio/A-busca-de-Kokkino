@@ -31,10 +31,10 @@ public class DialogueManager : MonoBehaviour
 
 
     public bool inDialogue;
-    public bool isCurrentlyTyping;
+    public bool isCurrentlyTyping; //verifica se o dialogo está incompleto e sendo exibido no momento
     private bool buffer;
 
-    public Queue<DialogueBase.Info> dialogueInfo = new Queue<DialogueBase.Info>();
+    public Queue<DialogueBase.Info> dialogueInfo = new Queue<DialogueBase.Info>(); // Fila de dialogos
 
     public void EnqueueDialogue(DialogueBase db)
     {
@@ -59,7 +59,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (isCurrentlyTyping == true)
         {
-            
+            // Exibe o dialogo até o final, para as corrotinas e atualiza o status
             CompleteText();
             StopAllCoroutines();
             isCurrentlyTyping = false;
@@ -70,7 +70,7 @@ public class DialogueManager : MonoBehaviour
 
         if (dialogueInfo.Count == 0)
         {
-            EndofDialogue();
+            EndOfDialogue();
             return;
         }
 
@@ -90,9 +90,9 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    IEnumerator TypeText(DialogueBase.Info info)
+    public IEnumerator TypeText(DialogueBase.Info info)
     {
-
+        // Espera para ir escrevendo
         isCurrentlyTyping = true;
 
         foreach (char c in info.myText.ToCharArray())
@@ -105,19 +105,22 @@ public class DialogueManager : MonoBehaviour
         isCurrentlyTyping = false;
     }
 
-    IEnumerator BufferTimer()
+    public IEnumerator BufferTimer()
     {
+        //Espera
         yield return new WaitForSeconds(0.1f);
         buffer = false;
     }
 
     private void CompleteText()
     {
+        //Armazena o dialogo inteiro no dialogueText.text
         dialogueText.text = completeText;
     }
 
-    public void EndofDialogue()
+    public void EndOfDialogue()
     {
+        // Desativa a UI
         dialogueBox.SetActive(false);
 
     }

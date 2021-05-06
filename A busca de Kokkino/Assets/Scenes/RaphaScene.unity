@@ -1542,7 +1542,7 @@ MonoBehaviour:
   firePoint: {fileID: 2029246560}
   projectile: {fileID: 7060580515525598398, guid: 384ecaf1639732c4b90c8a1931d8782e, type: 3}
   shootingDelay: 0.84
-  permanentShooting: 1
+  permanentShooting: 0
 --- !u!61 &1037553432
 BoxCollider2D:
   m_ObjectHideFlags: 0

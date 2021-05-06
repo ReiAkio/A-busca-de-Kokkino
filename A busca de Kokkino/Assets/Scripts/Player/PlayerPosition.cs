@@ -24,9 +24,10 @@ public class PlayerPosition : MonoBehaviour
         }
     }
     
-    IEnumerator ExecuteAfterTime(float time)
+    private IEnumerator ExecuteAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
+
