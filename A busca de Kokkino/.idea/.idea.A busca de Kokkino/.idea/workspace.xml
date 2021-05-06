@@ -28,6 +28,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/CustomPlayer/PlayerController2.cs" />
       <option value="$PROJECT_DIR$/Assets/Player/PlayerScripts/PlayerManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Tiles/BackGround/BackGroundShader.shader" />
+      <option value="$PROJECT_DIR$/Assets/Tiles/BackGround/BackgroundSpriteShader.shader" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qm1xybSiFDdGOsvZsCbJRn3Nrr" />
@@ -85,6 +86,7 @@
       <workItem from="1617897619833" duration="368000" />
       <workItem from="1619041495539" duration="4169000" />
       <workItem from="1619095595309" duration="2060000" />
+      <workItem from="1620247162291" duration="623000" />
     </task>
     <servers />
   </component>
