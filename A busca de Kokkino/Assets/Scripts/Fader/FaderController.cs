@@ -17,12 +17,6 @@ public class FaderController : MonoBehaviour
         {
             //Fader controler está associado a uma imagem (filha do canvas), esta imagem escurece e esclarece
             this.gameObject.GetComponent<Animator>().SetTrigger("HasDied");
-            reloadScene();
         }
-    }
-
-    void reloadScene()
-    {
-
     }
 }

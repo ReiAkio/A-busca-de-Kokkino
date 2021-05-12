@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeuDeusQuantoScript : MonoBehaviour
+public class InventoryManager : MonoBehaviour
 {
     public InventoryObject inventory;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -11,7 +11,7 @@ public class MeuDeusQuantoScript : MonoBehaviour
         if (item)
         {
             inventory.addItem(item.item, 1);
-            Destroy(collision.GetComponent<GameObject>());
+            Destroy(collision.gameObject);
         }
     }
 }

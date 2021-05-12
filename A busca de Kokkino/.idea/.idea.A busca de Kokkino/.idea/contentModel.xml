@@ -7,6 +7,21 @@
       <e p="A busca de Kokkino.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="ScriptableObjects" t="Include">
+          <e p="Inventory" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="InventoryObject.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Items" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="DefaultObject.cs" t="Include" />
+              <e p="ItemObject.cs" t="Include" />
+              <e p="KeyObject.cs" t="Include" />
+              <e p="NoteObject.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CheckPointSystem" t="Include">
             <e p="Checkpoint.cs" t="Include" />
@@ -26,6 +41,9 @@
             <e p="hook_line_render.cs" t="Include" />
             <e p="HookManager.cs" t="Include" />
           </e>
+          <e p="Items" t="Include">
+            <e p="Item.cs" t="Include" />
+          </e>
           <e p="Menu" t="Include">
             <e p="MenuManager.cs" t="Include" />
             <e p="MenuName.cs" t="Include" />
@@ -33,17 +51,32 @@
             <e p="MenuStart.cs" t="Include" />
             <e p="Rodando.cs" t="Include" />
           </e>
+          <e p="Objects" t="Include">
+            <e p="ChildrenScripts" t="Include">
+              <e p="ProjectileTrap.cs" t="Include" />
+              <e p="SpriteAppear_DissapearTrap.cs" t="Include" />
+              <e p="TileAppear_DissapearTrap.cs" t="Include" />
+              <e p="triggerObject.cs" t="Include" />
+            </e>
+            <e p="GenericScripts" t="Include">
+              <e p="TrapActivation.cs" t="Include" />
+              <e p="TrapTrigger.cs" t="Include" />
+            </e>
+            <e p="ProjectileScript.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
+            <e p="MeuDeusQuantoScript.cs" t="Include" />
             <e p="PlayerAnimationController.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerController2.cs" t="Include" />
+            <e p="PlayerControllerRapha.cs" t="Include" />
             <e p="PlayerManager.cs" t="Include" />
             <e p="PlayerPosition.cs" t="Include" />
           </e>
         </e>
         <e p="Tiles" t="Include">
           <e p="BackGround" t="Include">
-            <e p="BackGroundShader.shader" t="Include" />
+            <e p="BackgroundSpriteShader.shader" t="Include" />
           </e>
         </e>
       </e>

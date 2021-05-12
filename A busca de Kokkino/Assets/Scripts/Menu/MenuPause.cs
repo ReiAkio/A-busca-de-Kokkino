@@ -22,5 +22,6 @@ public class MenuPause : MonoBehaviour
         Time.timeScale = 1;
         Destroy(gameObject);
         MenuManager.GoToMenu(MenuName.VoltarMainMenu);
+        Rodando.foi = true;
     }
 }
