@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a51714f9-4c7d-4d0c-86e5-07e33443c2bf" name="Default Changelist" comment="" />
+    <list default="true" id="a51714f9-4c7d-4d0c-86e5-07e33443c2bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +54,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="0d570cb2-96df-43cc-80da-7f777e6d0afe" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -55,6 +62,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -64,6 +72,7 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -87,6 +96,10 @@
       <workItem from="1619041495539" duration="4169000" />
       <workItem from="1619095595309" duration="2060000" />
       <workItem from="1620247162291" duration="623000" />
+      <workItem from="1622071240746" duration="59000" />
+      <workItem from="1622071354167" duration="54000" />
+      <workItem from="1622071455118" duration="16000" />
+      <workItem from="1622074347696" duration="15000" />
     </task>
     <servers />
   </component>
