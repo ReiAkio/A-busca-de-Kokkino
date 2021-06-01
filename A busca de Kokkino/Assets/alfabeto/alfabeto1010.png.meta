@@ -1,0 +1,1596 @@
+fileFormatVersion: 2
+guid: 787c2c9126772b94d8307eb468e3c156
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1144054646453121947
+    second: alfabeto1010_0
+  - first:
+      213: -486914142324689164
+    second: alfabeto1010_1
+  - first:
+      213: 7311917628533391332
+    second: alfabeto1010_2
+  - first:
+      213: -4849703648920535271
+    second: alfabeto1010_3
+  - first:
+      213: 7667577116518905999
+    second: alfabeto1010_4
+  - first:
+      213: -6002071316819831126
+    second: alfabeto1010_5
+  - first:
+      213: -6567776020331030237
+    second: alfabeto1010_6
+  - first:
+      213: 2454930638594520416
+    second: alfabeto1010_7
+  - first:
+      213: -8584597834889389811
+    second: alfabeto1010_8
+  - first:
+      213: 3100862222897826005
+    second: alfabeto1010_9
+  - first:
+      213: -1095069950197507903
+    second: alfabeto1010_10
+  - first:
+      213: -3853302395317496955
+    second: alfabeto1010_11
+  - first:
+      213: -7128451391092671203
+    second: alfabeto1010_12
+  - first:
+      213: 23718902259211945
+    second: alfabeto1010_13
+  - first:
+      213: 1568055463470143269
+    second: alfabeto1010_14
+  - first:
+      213: 4602536410870707910
+    second: alfabeto1010_15
+  - first:
+      213: 7680548981652908336
+    second: alfabeto1010_16
+  - first:
+      213: 6444123963385024086
+    second: alfabeto1010_17
+  - first:
+      213: 3949369562747458445
+    second: alfabeto1010_18
+  - first:
+      213: -671234984116044772
+    second: alfabeto1010_19
+  - first:
+      213: -736209576400537457
+    second: alfabeto1010_20
+  - first:
+      213: -506813994984388886
+    second: alfabeto1010_21
+  - first:
+      213: -4536728794914933336
+    second: alfabeto1010_22
+  - first:
+      213: -6748392136542627818
+    second: alfabeto1010_23
+  - first:
+      213: 3446769487449530530
+    second: alfabeto1010_24
+  - first:
+      213: 8196781932036464670
+    second: alfabeto1010_25
+  - first:
+      213: -4164170863202848723
+    second: alfabeto1010_26
+  - first:
+      213: 5764562163336723380
+    second: alfabeto1010_27
+  - first:
+      213: 9002927926521002373
+    second: alfabeto1010_28
+  - first:
+      213: -4823466127196269038
+    second: alfabeto1010_29
+  - first:
+      213: -2382487536411399370
+    second: alfabeto1010_30
+  - first:
+      213: -6234623540212835142
+    second: alfabeto1010_31
+  - first:
+      213: -1581149191569967991
+    second: alfabeto1010_32
+  - first:
+      213: 8412988415008219515
+    second: alfabeto1010_33
+  - first:
+      213: -6232498770629300227
+    second: alfabeto1010_34
+  - first:
+      213: -6292294563851271682
+    second: alfabeto1010_35
+  - first:
+      213: 8494652166753565215
+    second: alfabeto1010_36
+  - first:
+      213: 3835160004217939844
+    second: alfabeto1010_37
+  - first:
+      213: -7656113684260301743
+    second: alfabeto1010_38
+  - first:
+      213: 6386878066045079784
+    second: alfabeto1010_39
+  - first:
+      213: 1713013582879867490
+    second: alfabeto1010_40
+  - first:
+      213: 3083636373148295939
+    second: alfabeto1010_41
+  - first:
+      213: 7117736380269010959
+    second: alfabeto1010_42
+  - first:
+      213: 1976507569024847689
+    second: alfabeto1010_43
+  - first:
+      213: 5931215691842839199
+    second: alfabeto1010_44
+  - first:
+      213: -481088621204338574
+    second: alfabeto1010_45
+  - first:
+      213: 7624533400508537973
+    second: alfabeto1010_46
+  - first:
+      213: 3130458755119435517
+    second: alfabeto1010_47
+  - first:
+      213: -4777859819677487878
+    second: alfabeto1010_48
+  - first:
+      213: 2697604778877213198
+    second: alfabeto1010_49
+  - first:
+      213: -8519933855965512414
+    second: alfabeto1010_50
+  - first:
+      213: 2151727367247261733
+    second: alfabeto1010_51
+  - first:
+      213: 3831498017853171120
+    second: alfabeto1010_52
+  - first:
+      213: -7455799190217116876
+    second: alfabeto1010_53
+  - first:
+      213: 4602613050093006375
+    second: alfabeto1010_54
+  - first:
+      213: -5748433183358677858
+    second: alfabeto1010_55
+  - first:
+      213: -5609716537856962839
+    second: alfabeto1010_56
+  - first:
+      213: 3070870088848520846
+    second: alfabeto1010_57
+  - first:
+      213: -1980045188653716210
+    second: alfabeto1010_58
+  - first:
+      213: 7105302591981146175
+    second: alfabeto1010_59
+  - first:
+      213: -940942067234187181
+    second: alfabeto1010_60
+  - first:
+      213: -8724027597733646596
+    second: alfabeto1010_61
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: alfabeto1010_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cc68a4c508f10f0800000000000000
+      internalID: -1144054646453121947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 118
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f67f96da222e39f0800000000000000
+      internalID: -486914142324689164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 118
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef36abc756297560800000000000000
+      internalID: 7311917628533391332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 118
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ffc24e93462bcb0800000000000000
+      internalID: -4849703648920535271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 118
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88f50e43c4b86a60800000000000000
+      internalID: 7667577116518905999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 118
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6946c00fb54bca0800000000000000
+      internalID: -6002071316819831126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 118
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32917dfc1829ad4a0800000000000000
+      internalID: -6567776020331030237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06536a5b86aa11220800000000000000
+      internalID: 2454930638594520416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 108
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0994d790c16dd880800000000000000
+      internalID: -8584597834889389811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_9
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 108
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8c04d33c9780b20800000000000000
+      internalID: 3100862222897826005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_10
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 108
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8d546aea78dc0f0800000000000000
+      internalID: -1095069950197507903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 108
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58350fa13e1568ac0800000000000000
+      internalID: -3853302395317496955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 108
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d384b5a37a21d90800000000000000
+      internalID: -7128451391092671203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_13
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 108
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae5f974734445000800000000000000
+      internalID: 23718902259211945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5279f38d22ad2c510800000000000000
+      internalID: 1568055463470143269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 98
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6ffbbfa7e7fdf30800000000000000
+      internalID: 4602536410870707910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_16
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 98
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039e8630b9ac69a60800000000000000
+      internalID: 7680548981652908336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 98
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e852e2a902e6950800000000000000
+      internalID: 6444123963385024086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_18
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 98
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d835d4251bafec630800000000000000
+      internalID: 3949369562747458445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cb2fa965b4fa6f0800000000000000
+      internalID: -671234984116044772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 88
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88b7667a4578c5f0800000000000000
+      internalID: -736209576400537457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_21
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 88
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae642c55b5f67f8f0800000000000000
+      internalID: -506813994984388886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_22
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 88
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a53fc8923d4a01c0800000000000000
+      internalID: -4536728794914933336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_23
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 88
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61856583b15e852a0800000000000000
+      internalID: -6748392136542627818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 78
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0a51a469265df20800000000000000
+      internalID: 3446769487449530530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_25
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 78
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e10af502db1d0c170800000000000000
+      internalID: 8196781932036464670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_26
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 78
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2033c2a9a4e536c0800000000000000
+      internalID: -4164170863202848723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_27
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 78
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbb75fdeb6dfff40800000000000000
+      internalID: 5764562163336723380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_28
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 78
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5897ab6ef33d0fc70800000000000000
+      internalID: 9002927926521002373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2165656fc1b9f0db0800000000000000
+      internalID: -4823466127196269038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 68
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b27666534bfeed0800000000000000
+      internalID: -2382487536411399370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_31
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 68
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc53513cea2a79a0800000000000000
+      internalID: -6234623540212835142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_32
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 68
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98473930031ae0ae0800000000000000
+      internalID: -1581149191569967991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_33
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 68
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71aa08b360f0c470800000000000000
+      internalID: 8412988415008219515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 58
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffe499a367b189a0800000000000000
+      internalID: -6232498770629300227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_35
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 58
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef10683ae674da8a0800000000000000
+      internalID: -6292294563851271682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_36
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 58
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a39d9932113e570800000000000000
+      internalID: 8494652166753565215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_37
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 58
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487223c44b9393530800000000000000
+      internalID: 3835160004217939844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_38
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 58
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15458a10b2500c590800000000000000
+      internalID: -7656113684260301743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0d95e03cfb2a850800000000000000
+      internalID: 6386878066045079784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_40
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 48
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26249f617c8d5c710800000000000000
+      internalID: 1713013582879867490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_41
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 48
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3036afd81f64bca20800000000000000
+      internalID: 3083636373148295939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_42
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f002fc6c68747c260800000000000000
+      internalID: 7117736380269010959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_43
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 48
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fc89b7927fd6b10800000000000000
+      internalID: 1976507569024847689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92e38e2f39ef4250800000000000000
+      internalID: 5931215691842839199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_45
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27802aba274d259f0800000000000000
+      internalID: -481088621204338574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_46
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c99633bb8cfc960800000000000000
+      internalID: 7624533400508537973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_47
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfec7e2e6af917b20800000000000000
+      internalID: 3130458755119435517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_48
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 38
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afce285eec1a1bdb0800000000000000
+      internalID: -4777859819677487878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a5f5df041df6520800000000000000
+      internalID: 2697604778877213198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_50
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 28
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22df95d6c4d13c980800000000000000
+      internalID: -8519933855965512414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_51
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 28
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5207242e3a87cdd10800000000000000
+      internalID: 2151727367247261733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_52
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 28
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b560c7a5273c2530800000000000000
+      internalID: 3831498017853171120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_53
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 28
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433b676932ea78890800000000000000
+      internalID: -7455799190217116876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72eee51fe24cfdf30800000000000000
+      internalID: 4602613050093006375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_55
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c86dae9767930b0800000000000000
+      internalID: -5748433183358677858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_56
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eec666c7884622b0800000000000000
+      internalID: -5609716537856962839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_57
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 18
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86303d531ced9a20800000000000000
+      internalID: 3070870088848520846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0de21344677584e0800000000000000
+      internalID: -1980045188653716210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_59
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 8
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30d2b8df0b1b9260800000000000000
+      internalID: 7105302591981146175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_60
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 8
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358d848dc2a11f2f0800000000000000
+      internalID: -940942067234187181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: alfabeto1010_61
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfea16a2f170ee680800000000000000
+      internalID: -8724027597733646596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
