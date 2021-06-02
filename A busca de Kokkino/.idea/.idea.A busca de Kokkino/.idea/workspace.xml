@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a51714f9-4c7d-4d0c-86e5-07e33443c2bf" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPosition.cs" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/ChildrenScripts/AppearDissapearObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/ChildrenScripts/AppearDissapearObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PreFabObjects/Spike.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PreFabObjects/Spike.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MapaRapha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MapaRapha.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/ChildrenScripts/triggerObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/ChildrenScripts/triggerObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Objects/GenericScripts/TrapActivation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Objects/GenericScripts/TrapActivation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,16 +48,27 @@
       <option value="$PROJECT_DIR$/Assets/Player/PlayerScripts/PlayerManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Tiles/BackGround/BackGroundShader.shader" />
       <option value="$PROJECT_DIR$/Assets/Tiles/BackGround/BackgroundSpriteShader.shader" />
+<<<<<<< Updated upstream
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPosition.cs" />
+=======
+      <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Objects/ChildrenScripts/TileAppear_DissapearTrap.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Objects/ChildrenScripts/AppearDissapearObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Objects/GenericScripts/TrapActivation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Objects/ChildrenScripts/triggerObject.cs" />
+>>>>>>> Stashed changes
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qm1xybSiFDdGOsvZsCbJRn3Nrr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -54,6 +79,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+<<<<<<< Updated upstream
+=======
+    <property name="nodejs_package_manager_path" value="npm" />
+>>>>>>> Stashed changes
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -100,7 +129,17 @@
       <workItem from="1622071354167" duration="54000" />
       <workItem from="1622071455118" duration="16000" />
       <workItem from="1622074347696" duration="15000" />
+<<<<<<< Updated upstream
       <workItem from="1622666526537" duration="1339000" />
+=======
+      <workItem from="1622121657307" duration="53000" />
+      <workItem from="1622121760553" duration="103000" />
+      <workItem from="1622123901836" duration="29000" />
+      <workItem from="1622634299914" duration="10000" />
+      <workItem from="1622634799448" duration="918000" />
+      <workItem from="1622635816055" duration="43000" />
+      <workItem from="1622635895943" duration="1289000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -122,6 +161,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
