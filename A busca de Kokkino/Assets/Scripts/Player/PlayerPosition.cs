@@ -20,7 +20,7 @@ public class PlayerPosition : MonoBehaviour
         if (Player.GetComponent<PlayerController2>().IsDead)
         {
             //Se o jogador morrer, da um tempo antesa de reiniciar a cena (para melhor fluidez da cena)
-            StartCoroutine(ExecuteAfterTime(0.5f));            
+            StartCoroutine(ExecuteAfterTime(0.5f));
         }
     }
     

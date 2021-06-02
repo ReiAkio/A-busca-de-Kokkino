@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a51714f9-4c7d-4d0c-86e5-07e33443c2bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.A busca de Kokkino/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPosition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPosition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
       <option value="$PROJECT_DIR$/Assets/Player/PlayerScripts/PlayerManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Tiles/BackGround/BackGroundShader.shader" />
       <option value="$PROJECT_DIR$/Assets/Tiles/BackGround/BackgroundSpriteShader.shader" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPosition.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1qm1xybSiFDdGOsvZsCbJRn3Nrr" />
@@ -54,7 +54,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="0d570cb2-96df-43cc-80da-7f777e6d0afe" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -100,6 +100,7 @@
       <workItem from="1622071354167" duration="54000" />
       <workItem from="1622071455118" duration="16000" />
       <workItem from="1622074347696" duration="15000" />
+      <workItem from="1622666526537" duration="1339000" />
     </task>
     <servers />
   </component>
