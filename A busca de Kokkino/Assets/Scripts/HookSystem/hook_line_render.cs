@@ -24,7 +24,7 @@ private void positionAdjust()
                 hookLineRender.enabled = true;                                                          // Habilita a exibicão do Line Renderer
                 hookLineRender.SetPosition(1, connectedBodyToJoint.transform.position);                 // Define a posicão final do Distance Joint 2D
                 hookLineRender.SetPosition(0, playerPosition.transform.position);                       // Define a posicão inicial do Distance Joint 2D
-            }
+        }
         
         else {                                                                                          // É executado quando Distance Joint 2D NÃO está conectado a outro objeto (NULL REFERENCE EXEPTION) ou inativo
 

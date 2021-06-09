@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -64,17 +65,8 @@ public class HookManager : MonoBehaviour
     // Parâmetros:
     //   anchor:
     //     O objeto Anchorpoint cuja distancia será calculada até o Player.
-    private double distancePlayerAnchor(GameObject anchor)
-    {
-        double xPlayer = playerPosition_hm.transform.position.x;
-        double yPlayer = playerPosition_hm.transform.position.y;
-
-        double xAnchor = anchor.transform.position.x;
-        double yAnchor = anchor.transform.position.y;
-
-        return Sqrt( (Pow( (xPlayer - xAnchor), 2 ) + Pow( (yPlayer - yAnchor), 2) ) );
-    }
-
+    private double distancePlayerAnchor(GameObject anchor) => ( playerPosition_hm.transform.position - anchor.transform.position ).magnitude;
+    
     //
     // Resumo:
     //     Retorna se existe algum corpo já conectado ao Distance Joint 2D.
@@ -123,7 +115,6 @@ public class HookManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(hookActivationKey))
                 {
-                    releaseConnectedHook(); // Desconecta do antigo Anchorpoint
                     distanceJoint_hm.connectedBody = findAnchorInLowerRange().GetComponent<Rigidbody2D>(); // Atualiza a conexão do Distance Joint 2D
                 }               
 
@@ -146,6 +137,7 @@ public class HookManager : MonoBehaviour
         }
         
     }
+
 
     //
     // Resumo:
