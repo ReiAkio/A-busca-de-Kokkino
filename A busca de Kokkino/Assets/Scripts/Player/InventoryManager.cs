@@ -7,11 +7,14 @@ public class InventoryManager : MonoBehaviour
     public InventoryObject inventory;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var item = collision.GetComponent<Item>();
-        if (item)
+        GameObject[] itens = GameObject.FindGameObjectsWithTag("Item");
+        foreach (GameObject item in itens)
         {
-            inventory.addItem(item.item, 1);
-            Destroy(collision.gameObject);
+            if (collision.gameObject.Equals(item))
+            {
+                inventory.addItem(item.GetComponent<InventorySlot>().item);
+                item.SetActive(false);
+            }
         }
     }
 }

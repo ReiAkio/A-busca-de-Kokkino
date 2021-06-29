@@ -7,47 +7,23 @@ public class InventoryObject : ScriptableObject
 {
     public List<InventorySlot> Container = new List<InventorySlot>();
 
-    public void addItem(ItemObject _item, int _amount)
+    public void addItem(ItemObject _item)
     {
-        // bool hasItem = false;
-        // for (int i = 0; i < Container.Count; i++){
-        //     if (Container[i].item == _item)
-        //     {
-        //         Container[i].addAmount(_amount);
-        //         hasItem = true;
-        //         break;
-        //     }
-        // }
-        //
-        // if (!hasItem)
-        // {
-        //     Container.Add(new InventorySlot(_item, _amount));
-        // }
+        InventorySlot slot = new InventorySlot(_item);
+        Container.Add(slot);
     }
-
-    // public void removeItem(ItemObject _item, int _amount)
-    // {
-    //     bool hasItem = false;
-    //     for (int i = 0; i < Container.Count; i++){
-    //         if (Container[i].item == _item)
-    //         {
-    //             Container[i].removeAmount(_amount);
-    //
-    //             if (Container[i].itemPosition <= 0)
-    //             {
-    //                 Container.Remove(Container[i]);
-    //             }
-    //
-    //             hasItem = true;
-    //             break;
-    //         }
-    //     }
-    //
-    //     if (!hasItem)
-    //     {
-    //         Debug.Log("The item you are trying to remove doesn't exists");
-    //     }
-    // }
+    
+    public void removeItem(ItemObject _item)
+    {
+        InventorySlot toRemoveSlot = new InventorySlot(_item);
+        foreach (InventorySlot slot in Container)
+        {
+            if (toRemoveSlot.item.Equals(slot.item) && toRemoveSlot.itemPosition.Equals(slot.itemPosition))
+            {
+                Container.Remove(slot);
+            }
+        }
+    }
 
 }
 
@@ -57,20 +33,11 @@ public class InventorySlot
     public ItemObject item;
     public float[] itemPosition;
 
-    public InventorySlot(ItemObject _item, int itemPosition)
+    public InventorySlot(ItemObject _item)
     {
         item = _item;
-        itemPosition = itemPosition;
+        itemPosition[0] = _item.prefabItem.transform.position.x;
+        itemPosition[1] = _item.prefabItem.transform.position.y;
+        itemPosition[2] = _item.prefabItem.transform.position.z;
     }
-
-    // public void addAmount(int value)
-    // {
-    //     itemPosition += value;
-    // }
-    //
-    // public void removeAmount(int value)
-    // {
-    //     itemPosition -= value;
-    // }
-
 }
