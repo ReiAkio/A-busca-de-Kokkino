@@ -14,6 +14,7 @@ public static class SaveSystem
         FileStream stream = new FileStream(path, FileMode.Create);
         formatter.Serialize(stream, data);
         stream.Close();
+        Debug.Log(path);
 
     }
 

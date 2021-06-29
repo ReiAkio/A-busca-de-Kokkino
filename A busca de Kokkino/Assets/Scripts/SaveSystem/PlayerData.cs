@@ -18,25 +18,23 @@ public class PlayerData
     /// <param name="inventory"></param> referência do inventário do player.
     public PlayerData(GameObject checkpoint, InventoryObject inventory) // Posição do último Checkpoint (lastCheckpointPos)
     {
-        int positionLenght = (int)checkpoint.transform.position.magnitude; // Calcula o tamanho do vetor de posição
+        int positionLenght = 3; // Determina o tamanho do vetor de posição
+        Debug.Log("Tamanho do vetor: " + positionLenght);
         checkPointPosition = new float[positionLenght]; // Instancia o vetor no tamanho adequado
-        
-        for (int index = 0; index < positionLenght; index++) // Para cada posição do vetor (x, y, z), iguala ao do checkpoint
-        {
-            // Associa a posição do checkpoint ao playerData
-            checkPointPosition[index] = checkpoint.transform.position[index];
-        }
-        
-        for (int i = 0; i < inventory.Container.Count; i++) // Para cada item no inventário
-        {
-            float[] posicaoDoItemX = new float[3]; // Instancia uma nova posição de item
-            for (int j = 0; j < inventory.Container[i].itemPosition.Length; j++) // Para cada posição no vetor posição do item
-            {
-                // Associa a posição do item ao vetor
-                posicaoDoItemX[j] = inventory.Container[i].itemPosition[j];
-            }
-            itemPosition.AddLast(posicaoDoItemX); // Adiciona a posição do item à lista de itens coletados
-        }
-        
+        checkPointPosition[0] = checkpoint.transform.position.x;
+        checkPointPosition[1] = checkpoint.transform.position.y;
+        checkPointPosition[2] = checkpoint.transform.position.z;
+
+        // for (int i = 0; i < inventory.Container.Count; i++) // Para cada item no inventário
+        // {
+        //     float[] posicaoDoItemX = new float[3]; // Instancia uma nova posição de item
+        //     for (int j = 0; j < inventory.Container[i].itemPosition.Length; j++) // Para cada posição no vetor posição do item
+        //     {
+        //         // Associa a posição do item ao vetor
+        //         posicaoDoItemX[j] = inventory.Container[i].itemPosition[j];
+        //     }
+        //     itemPosition.AddLast(posicaoDoItemX); // Adiciona a posição do item à lista de itens coletados
+        // }
+
     }
 }

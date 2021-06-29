@@ -1,18 +1,21 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoadSystem
+public class LoadSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public String playerTag;
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        PlayerData reloadedData = SaveSystem.loadData();
+        GameObject player = GameObject.FindWithTag("Player");
+        //player.transform.position.x = reloadedData.checkPointPosition[0];
+        GameObject[] checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+        foreach (GameObject checkpoint in checkpoints)
+        {
+            if (checkpoint.transform.position.Equals(reloadedData.checkPointPosition))
+                checkpoint.SetActive(false);
+        }
     }
 }
