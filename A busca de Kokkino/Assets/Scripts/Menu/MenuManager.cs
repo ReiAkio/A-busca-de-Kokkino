@@ -10,7 +10,7 @@ public static class MenuManager
         switch (name)
         {
             case MenuName.Main:
-                SceneManager.LoadScene("SampleScene");
+                SceneManager.LoadScene("MainCene");
                 break;
 
             case MenuName.Pause:
