@@ -11,6 +11,7 @@ TagManager:
   - Spike
   - Inventoryslot
   - Inventory
+  - Item
   layers:
   - Default
   - TransparentFX
