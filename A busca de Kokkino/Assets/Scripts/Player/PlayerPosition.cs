@@ -12,8 +12,6 @@ public class PlayerPosition : MonoBehaviour
         //Inicia a instância dos objetos
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckPointManager>();
         Player = GameObject.FindGameObjectWithTag("Player");
-        //Move o personagem para a posicão do último checkpoint
-        transform.position = cm.lastCheckpointPos;
     }
     void Update()
     {
