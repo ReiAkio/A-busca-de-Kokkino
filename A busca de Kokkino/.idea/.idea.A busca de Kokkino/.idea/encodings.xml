@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Assets/Scripts/HookSystem/HookManager.cs" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/Assets/Scripts/HookSystem/hook_line_render.cs" charset="windows-1252" />
+    <file url="PROJECT" charset="windows-1252" />
   </component>
 </project>
