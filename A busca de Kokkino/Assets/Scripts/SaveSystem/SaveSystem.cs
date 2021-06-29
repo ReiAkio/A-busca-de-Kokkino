@@ -15,7 +15,6 @@ public static class SaveSystem
         formatter.Serialize(stream, data);
         stream.Close();
         Debug.Log(path);
-
     }
 
     // Fazer o load (abrir o arquivo no "/testesave" e deserializar para usar no jogo)
