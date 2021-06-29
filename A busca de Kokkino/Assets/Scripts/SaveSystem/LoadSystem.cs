@@ -10,6 +10,11 @@ public class LoadSystem : MonoBehaviour
     public static String itemTag = "Item";
     private void Start()
     {
+        Reload();
+    }
+
+    public static void Reload()
+    {
         PlayerData reloadedData = SaveSystem.loadData();
         GameObject player = GameObject.FindWithTag(playerTag);
         Vector3 position = new Vector3(reloadedData.checkPointPosition[0], reloadedData.checkPointPosition[1], reloadedData.checkPointPosition[2]);
