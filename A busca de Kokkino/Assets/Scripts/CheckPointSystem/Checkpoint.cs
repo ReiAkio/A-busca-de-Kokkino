@@ -9,9 +9,9 @@ public class Checkpoint : MonoBehaviour
         //Verifica se o player colidiu com o objeto checkpoint
         if (collision.CompareTag("Player"))
         {
-            this.gameObject.SetActive(false);                                   //Desativa o checkpoint
-            cm.checkPointactivated.Add(this.gameObject.transform.position);     //Adiciona a posicão do checkpoint ao vetor de checkpoints salvos
-            cm.lastCheckpointPos = transform.position;                          //Atualiza a posicão do ultimo checkpoint salvo para o novo
+            this.gameObject.SetActive(false);                                           //Desativa o checkpoint
+            cm.checkPointactivated.Add(this.gameObject.transform.position);     //Adiciona a posicï¿½o do checkpoint ao vetor de checkpoints salvos
+            cm.lastCheckpointPos = transform.position;                          //Atualiza a posicï¿½o do ultimo checkpoint salvo para o novo
             SavePlayer(cm);
         }
     }
@@ -21,14 +21,14 @@ public class Checkpoint : MonoBehaviour
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckPointManager>();
     }
 
-    public void SavePlayer(CheckPointManager cm) // Salvar a posição quando chamado
+    public void SavePlayer(CheckPointManager cm) // Salvar a posiï¿½ï¿½o quando chamado
     {
         Debug.Log("Salvei");
         SaveSystem.SavePlayer(cm);
 
     }
 
-    public void LoadPlayer() // Fazer o load da posição quando requisitado
+    public void LoadPlayer() // Fazer o load da posiï¿½ï¿½o quando requisitado
     {
         PlayerData data = SaveSystem.LoadPlayer();
 

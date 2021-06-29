@@ -5,12 +5,12 @@ public class CheckPointManager : MonoBehaviour
 {
     //Scrip associado a um objeto dentro da cena
     private static CheckPointManager instance;
-    public Vector2 lastCheckpointPos;               //Armazena a posic„o do ultimo checkpoint atingido
-    public List<Vector2> checkPointactivated;       //Armazena uma lista com a posic„o de todos os checkpoints salvos (para previnir o ressalvamento)
+    public Vector2 lastCheckpointPos;               //Armazena a posic√£o do ultimo checkpoint atingido
+    public List<Vector2> checkPointactivated;       //Armazena uma lista com a posic√£o de todos os checkpoints salvos (para previnir o ressalvamento)
     
     private GameObject player;
 
-    void Awake() //Garante a existÍncia de apenas um checkpointmanager (que mantÈm suas propriedades ao recarregar cenas)
+    void Awake() //Garante a exist√™ncia de apenas um checkpointmanager (que mant√©m suas propriedades ao recarregar cenas)
     {
         if (instance == null)
         {
@@ -32,13 +32,13 @@ public class CheckPointManager : MonoBehaviour
 
     private void Update()
     {
-        //Seria possÌvel somente verificar os checkpoints uma vez a cada recarregamento de cena, precisa melhorar...
+        //Seria poss√≠vel somente verificar os checkpoints uma vez a cada recarregamento de cena, precisa melhorar...
         correctCheckpoints(checkPointactivated);
     }
 
     private void correctCheckpoints(List<Vector2> checks)
     {
-        //Compara a posic„o de cada checkpoint (recriados a cada recarregamento da cena) com os salvos anteriormente e desativa os j· salvos
+        //Compara a posic√£o de cada checkpoint (recriados a cada recarregamento da cena) com os salvos anteriormente e desativa os j√° salvos
         GameObject[] checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         foreach (Vector2 check in checks)
         {

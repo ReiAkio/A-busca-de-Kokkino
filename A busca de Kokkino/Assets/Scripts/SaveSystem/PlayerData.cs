@@ -11,7 +11,7 @@ public class PlayerData
     public float[] position;
 
 
-    public PlayerData(CheckPointManager cm) // Posição do último Checkpoint (lastCheckpointPos)
+    public PlayerData(CheckPointManager cm) // PosiÃ§Ã£o do Ãºltimo Checkpoint (lastCheckpointPos)
     {
         cm.lastCheckpointPos = GameObject.Find("CheckPointManager").GetComponent<CheckPointManager>().lastCheckpointPos;
         position = new float[2];

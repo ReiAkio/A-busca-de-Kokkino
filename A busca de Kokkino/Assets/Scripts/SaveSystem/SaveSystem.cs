@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    // Fazer o save (transformar em bin·rio e serializar para o "/testesave")
+    // Fazer o save (transformar em bin√°rio e serializar para o "/testesave")
     public static void SavePlayer(CheckPointManager cm)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -31,11 +31,12 @@ public static class SaveSystem
             stream.Close();
             return data;
         }
-        else              // Caso n„o ache a pasta para salvar  
+        else              // Caso n√£o ache a pasta para salvar  
         {
-            Debug.LogError("N„o foi encontrado na pasta" + path);
+            Debug.LogError("N√£o foi encontrado na pasta" + path);
             return null;
         }
 
     }
 }
+
