@@ -6,7 +6,8 @@ public enum MenuName
 {
     Main,
     Pause,
-    VoltarMainMenu
+    VoltarMainMenu,
+    Sair
 }
 
 

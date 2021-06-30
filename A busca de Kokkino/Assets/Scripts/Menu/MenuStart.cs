@@ -10,4 +10,9 @@ public class MenuStart : MonoBehaviour
         SceneManager.LoadScene(LoadScene);
     }
 
+    public void HandleQuitButtonOnClickEvent()
+    {
+        Application.Quit();
+    }
+
 }
