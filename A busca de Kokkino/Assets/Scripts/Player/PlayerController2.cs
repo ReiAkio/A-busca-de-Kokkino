@@ -104,7 +104,7 @@ public class PlayerController2 : MonoBehaviour
         bool isTheGround = true; //Pode colidir com objetos fora do chão ----> refatorar
         
         foreach (ContactPoint2D contactPoint in contactPoints) // -------------------------------- ESQUECE
-        {
+        {   
             Vector2 point = contactPoint.point;             // Ponto onde ocorre o contato
             Vector2 center = this.transform.position;       // Posicao do jogador
 
