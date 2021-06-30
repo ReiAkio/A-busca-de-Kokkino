@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5417715230866211165}
   - component: {fileID: 176382986668479298}
   - component: {fileID: 7489059435482678697}
-  - component: {fileID: 8637874878583703089}
   - component: {fileID: 8874644703863915816}
   m_Layer: 0
   m_Name: PauseButton
@@ -134,14 +133,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!81 &8637874878583703089
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4824076828808412232}
-  m_Enabled: 1
+      - m_Target: {fileID: 8874644703863915816}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!82 &8874644703863915816
 AudioSource:
   m_ObjectHideFlags: 0
@@ -351,7 +354,6 @@ GameObject:
   - component: {fileID: 4723276155200795178}
   - component: {fileID: 7977832386281914220}
   - component: {fileID: 4677196860063082538}
-  - component: {fileID: 3099380191468227495}
   - component: {fileID: 3561553721988149621}
   m_Layer: 0
   m_Name: MainMenuButton
@@ -473,14 +475,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!81 &3099380191468227495
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6005381489089070051}
-  m_Enabled: 1
+      - m_Target: {fileID: 3561553721988149621}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!82 &3561553721988149621
 AudioSource:
   m_ObjectHideFlags: 0
@@ -587,7 +593,6 @@ GameObject:
   m_Component:
   - component: {fileID: 429789311087822935}
   - component: {fileID: 8323309608461930555}
-  - component: {fileID: 2648291829918574250}
   m_Layer: 0
   m_Name: Pause
   m_TagString: Untagged
@@ -622,11 +627,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac377f9a087b594491c722d048da081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!81 &2648291829918574250
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6989455670627151235}
-  m_Enabled: 1
