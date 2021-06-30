@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MenuPause : MonoBehaviour
 {
+    public float time;
     void Start()
     {
         Time.timeScale = 0;
@@ -12,9 +13,7 @@ public class MenuPause : MonoBehaviour
 
     public void HandleResumeButtonOnClickEvent()
     {
-        Time.timeScale = 1;
-        Destroy(gameObject);
-        Rodando.foi = true;
+        StartCoroutine(help(time));
     }
 
     public void HandleVoltarMainMenuButtonOnClickEvent()
@@ -23,5 +22,15 @@ public class MenuPause : MonoBehaviour
         Destroy(gameObject);
         MenuManager.GoToMenu(MenuName.VoltarMainMenu);
         Rodando.foi = true;
+    }
+
+    IEnumerator help(float time)
+    {
+        Time.timeScale = 1;
+        //gameObject.SetActive(false);
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
+        Rodando.foi = true;
+        yield break;
     }
 }
