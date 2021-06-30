@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
 
 
     public bool inDialogue;
-    public bool isCurrentlyTyping; //verifica se o dialogo est· incompleto e sendo exibido no momento
+    public bool isCurrentlyTyping; //verifica se o dialogo est√° incompleto e sendo exibido no momento
     private bool buffer;
 
     public Queue<DialogueBase.Info> dialogueInfo = new Queue<DialogueBase.Info>(); // Fila de dialogos
@@ -59,7 +59,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (isCurrentlyTyping == true)
         {
-            // Exibe o dialogo atÈ o final, para as corrotinas e atualiza o status
+            // Exibe o dialogo at√© o final, para as corrotinas e atualiza o status
             CompleteText();
             StopAllCoroutines();
             isCurrentlyTyping = false;
