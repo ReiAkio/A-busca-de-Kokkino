@@ -36,8 +36,8 @@ public class InventorySlot
     public InventorySlot(ItemObject _item)
     {
         item = _item;
-        itemPosition[0] = _item.prefabItem.transform.position.x;
-        itemPosition[1] = _item.prefabItem.transform.position.y;
-        itemPosition[2] = _item.prefabItem.transform.position.z;
+        // itemPosition[0] = _item.inGameObject.transform.position.x;
+        // itemPosition[1] = _item.inGameObject.transform.position.y;
+        // itemPosition[2] = _item.inGameObject.transform.position.z;
     }
 }
