@@ -11,9 +11,8 @@ public class Item : MonoBehaviour
     {
         if (other.gameObject.CompareTag(playerTag))
         {
-            Debug.Log("P[layer em contato");
+            Debug.Log("Player em contato");
             gameObject.SetActive(false);
-            playerInventory.addItem(item);
         }
     }
 }

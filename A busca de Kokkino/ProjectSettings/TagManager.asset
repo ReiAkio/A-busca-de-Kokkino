@@ -12,6 +12,7 @@ TagManager:
   - Inventoryslot
   - Inventory
   - Item
+  - PlayerCamera
   layers:
   - Default
   - TransparentFX

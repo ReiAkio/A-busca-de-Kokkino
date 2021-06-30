@@ -15,7 +15,6 @@ public class Checkpoint : MonoBehaviour
 
     public void saveActualPlayerInfo() // Salvar a posi��o quando chamado
     {
-        Debug.Log( gameObject + "Posição: " + gameObject.transform.position);
         PlayerData actualData = new PlayerData(gameObject, playerInventory);
         SaveSystem.saveData(actualData);
     }

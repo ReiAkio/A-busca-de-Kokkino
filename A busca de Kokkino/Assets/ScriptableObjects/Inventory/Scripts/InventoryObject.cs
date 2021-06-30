@@ -1,28 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using UnityEditor;
+using UnityEditor.Experimental;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
 public class InventoryObject : ScriptableObject
 {
-    public List<InventorySlot> Container = new List<InventorySlot>();
-
-    public void addItem(ItemObject _item)
-    {
-        InventorySlot slot = new InventorySlot(_item);
-        Container.Add(slot);
-    }
+    [Header("Inventory Configuration")] 
+    public static int inventorySize = 3;
+    public static Sprite emptySlotSprite;
+    public static Camera playerCamera;
     
-    public void removeItem(ItemObject _item)
+    [Header("Inventory")]
+    public static InventorySlot[] inventory = new InventorySlot[inventorySize];
+
+    public void startInventory()
     {
-        InventorySlot toRemoveSlot = new InventorySlot(_item);
-        foreach (InventorySlot slot in Container)
+        playerCamera = GameObject.FindWithTag("PlayerCamera").GetComponent<Camera>();
+        for (int i = 0; i < inventory.Length; i ++)
         {
-            if (toRemoveSlot.item.Equals(slot.item) && toRemoveSlot.itemPosition.Equals(slot.itemPosition))
+            if (!inventory.Equals(null))
             {
-                Container.Remove(slot);
+                inventory[i].item = null;
+                inventory[i].itemPosition = null;
             }
         }
+        Debug.Log("Inventário: " + inventory);
+    }
+
+    public void addItem(GameObject gameItem)
+    {
+        // InventorySlot slot = new InventorySlot(_item);
+        // inventory.Add(slot);
+    }
+
+    public void displayInventory()
+    {
+        
     }
 
 }
@@ -33,11 +47,11 @@ public class InventorySlot
     public ItemObject item;
     public float[] itemPosition;
 
-    public InventorySlot(ItemObject _item)
+    public InventorySlot(GameObject gameItem)
     {
-        item = _item;
-        // itemPosition[0] = _item.inGameObject.transform.position.x;
-        // itemPosition[1] = _item.inGameObject.transform.position.y;
-        // itemPosition[2] = _item.inGameObject.transform.position.z;
+        // item = gameItem.GetComponent<>();
+        // itemPosition[0] = _item.position.transform.position.x;
+        // itemPosition[1] = _item.position.transform.position.y;
+        // itemPosition[2] = _item.position.transform.position.z;
     }
 }

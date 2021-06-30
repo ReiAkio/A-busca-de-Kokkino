@@ -9,12 +9,10 @@ public static class SaveSystem
     public static void saveData(PlayerData data)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        Debug.Log(Application.persistentDataPath);
         string path = Application.persistentDataPath + "/testesave";
         FileStream stream = new FileStream(path, FileMode.Create);
         formatter.Serialize(stream, data);
         stream.Close();
-        Debug.Log(path);
     }
 
     // Fazer o load (abrir o arquivo no "/testesave" e deserializar para usar no jogo)

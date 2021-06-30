@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264ccceb805db004ebba928a39a2d2e0, type: 3}
   m_Name: DemonKey1
   m_EditorClassIdentifier: 
-  inGameObject: {fileID: 0}
+  position: {fileID: 0}
+  inGameObject: {fileID: 11400000}
   type: 0
   description: 
   locker: {fileID: 0}

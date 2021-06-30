@@ -13,6 +13,7 @@ public class PlayerController2 : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
     public Transform feetPos;
+    public InventoryObject inventory;
     //private AnimationType currentAnimation;
 
 
