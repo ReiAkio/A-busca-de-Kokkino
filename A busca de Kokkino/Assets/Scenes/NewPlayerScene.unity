@@ -1101,7 +1101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4398462ff1ca64c81bc94ccf739e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pp: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!58 &473529762
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4398462ff1ca64c81bc94ccf739e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pp: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!58 &724283959
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4398462ff1ca64c81bc94ccf739e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pp: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!58 &1016565109
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2308,7 +2308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a27891b083b6746a95599554a8a89f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 11400000, guid: 2f21a97e4fdc19446994788832120bfe, type: 2}
+  inventory: {fileID: 0}
 --- !u!1 &1195917991
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,7 +2581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4398462ff1ca64c81bc94ccf739e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pp: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!58 &1251958092
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2946,8 +2946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81f0f4934c8cf43b32b3e15498d237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckpointPos: {x: 0, y: 0}
-  checkPointactivated: []
 --- !u!4 &1349700360
 Transform:
   m_ObjectHideFlags: 0
@@ -4796,7 +4794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4398462ff1ca64c81bc94ccf739e63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pp: {fileID: 0}
+  playerInventory: {fileID: 0}
 --- !u!58 &1989600954
 CircleCollider2D:
   m_ObjectHideFlags: 0
