@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 namespace PlayerFolder
 {
     [Serializable]
     public class PlayerState
     {
+        protected AudioSource audioSource;
         protected PlayerHandler playerHandler;
         protected InputHandler inputHandler;
         protected PlayerData playerData;
@@ -30,8 +32,22 @@ namespace PlayerFolder
         public UnityEvent logicUpdateStateEvent;
         public UnityEvent fixedUpdateStateEvent;
 
-        
-        
+        public List<AudioClip> audioClips = new List<AudioClip>();
+
+        private AudioClip GetRandomClip()
+        {
+            var size = audioClips.Count;
+            return audioClips[Random.Range(0, size)];
+        }
+
+        private void UpdateAudio()
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.clip = GetRandomClip();
+                audioSource.Play();
+            }
+        }
         public PlayerState(){}
 
         public virtual void InjectInfo(PlayerHandler playerHandler,InputHandler inputHandler,PlayerData playerData,StateMachine stateMachine,Rigidbody2D rigidbody2D,Animator animator)
@@ -74,6 +90,7 @@ namespace PlayerFolder
         {
             stateActive = false;
             leaveStateEvent.Invoke();
+            audioSource.Stop();
         }
 
         public virtual void FixedUpdateState()

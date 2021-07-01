@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PlayerFolder
 {
@@ -12,46 +13,42 @@ namespace PlayerFolder
         private new Rigidbody2D rigidbody2D;
         private SpriteRenderer spriteRenderer;
 
-        [SerializeField] private PlayerData playerData;
-
-        #region Serialized data
-
-        [SerializeField]
-        private LayerMask layerMask;
-        [SerializeField]
-        private Transform groundCheck;
-        [SerializeField]
-        private Transform wallCheck;
-        [SerializeField]
-        private Transform ceilingCheck;
+        public PlayerData playerData;
         
-        [SerializeField]
-        private float groundCheckRadius = 1f;
-        [SerializeField]
-        private float wallCheckDistance;
-
+        public LayerMask groundLayerMask;
+        public LayerMask mudLayerMask;
+        public LayerMask poisonLayerMask;
+        public LayerMask trampolineLayerMask;
         
-        #endregion
-
-        #region player handler variables
-
+        public Transform groundCheck;
+        public Transform wallCheck;
+        public Transform ceilingCheck;
         
+        public float groundCheckRadius = 1f;
+        public float wallCheckDistance = 1f;
+        public float jumpInstantVelocity;
         
-        public float JumpInstantVelocity;
-        
+        [Range(1,100)]
+        public float trampolineForce = 20f;
         public bool isTouchingWall;
         public bool isTalking;
-        public bool isGrounded;
         public float currentSpeed;
-        
+        public bool isGrounded;
+
+        public bool inGround;
+        public bool inMud;
+        public bool inPoison;
+        public bool inTrampoline;
         
         public List<GameObject> attachablePoints;
         public GameObject nearestAttachablePoint;
         public float maxAttachDistance;
         public bool canAttach;
         public bool isAttached;
-        
-        #endregion
+
+        public UnityEvent touchedMud;
+        public UnityEvent touchedTrampoline;
+        public UnityEvent touchedPoison;
         
         #region UnityCallBack
 
@@ -66,7 +63,7 @@ namespace PlayerFolder
         private void Update()
         {
             VerifyFlip();
-            isGrounded = GroundCheck();
+            GroundCheck();
             isTouchingWall = WallFrontCheck();
             
         }
@@ -75,12 +72,39 @@ namespace PlayerFolder
 
         #region Verify functions
         
-        private bool CeilCheck() => Physics2D.OverlapCircle(ceilingCheck.position, groundCheckRadius,layerMask);
-        private bool GroundCheck() => Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius,layerMask);
+        private bool CeilCheck() => Physics2D.OverlapCircle(ceilingCheck.position, groundCheckRadius,groundLayerMask);
+        private void GroundCheck()
+        {
+
+            var lastFrameMud = inMud;
+            var lastFramePoison = inPoison;
+            var lastFrameTrampoline = inTrampoline;
+
+            
+            var position = groundCheck.position;
+            inGround = Physics2D.OverlapCircle(position, groundCheckRadius, groundLayerMask);
+            inMud = Physics2D.OverlapCircle(position, groundCheckRadius, mudLayerMask);
+            if (inMud &&lastFrameMud !=inMud )
+            {
+                touchedMud.Invoke();
+            }
+            inPoison = Physics2D.OverlapCircle(position, groundCheckRadius, poisonLayerMask);
+            if (inPoison &&lastFramePoison !=inPoison )
+            {
+                touchedPoison.Invoke();
+            }
+            inTrampoline = Physics2D.OverlapCircle(position, groundCheckRadius, trampolineLayerMask);
+            if (inTrampoline &&lastFrameTrampoline !=inTrampoline )
+            {
+                rigidbody2D.AddForce(Vector2.up*trampolineForce);
+                touchedTrampoline.Invoke();
+            }
+            isGrounded = inGround || inMud || inPoison;
+        }
 
         private bool WallFrontCheck()
         {
-            var hit = Physics2D.Raycast(wallCheck.position, Vector2.right * facingDirection, wallCheckDistance, layerMask);
+            var hit = Physics2D.Raycast(wallCheck.position, Vector2.right * facingDirection, wallCheckDistance, groundLayerMask);
             Debug.DrawRay(wallCheck.position, Vector2.right * (facingDirection * wallCheckDistance));
             if (hit)
             {
@@ -89,7 +113,7 @@ namespace PlayerFolder
             return hit;
         } 
         
-        private bool WallBackCheck() => Physics2D.Raycast(wallCheck.position, Vector2.right * -facingDirection, wallCheckDistance, layerMask);
+        private bool WallBackCheck() => Physics2D.Raycast(wallCheck.position, Vector2.right * -facingDirection, wallCheckDistance, groundLayerMask);
         #endregion
 
         #region SetSpeedFunction
@@ -146,13 +170,13 @@ namespace PlayerFolder
         
         public void StartJump()
         {
-            JumpInstantVelocity = playerData.initialJumpVelocity;
+            jumpInstantVelocity = playerData.initialJumpVelocity;
         }
         public void UpdateJump()
         {
             var position = rigidbody2D.position;
-            rigidbody2D.position = position + JumpInstantVelocity * Time.deltaTime * Vector2.up;
-            JumpInstantVelocity -= playerData.jumpDrag;
+            rigidbody2D.position = position + jumpInstantVelocity * Time.deltaTime * Vector2.up;
+            jumpInstantVelocity -= playerData.jumpDrag;
         }
     }
 }

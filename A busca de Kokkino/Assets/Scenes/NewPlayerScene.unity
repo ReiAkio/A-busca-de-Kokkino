@@ -912,6 +912,22 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2870801565608265450, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
+      propertyPath: mudLayerMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870801565608265450, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
+      propertyPath: groundLayerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870801565608265450, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
+      propertyPath: poisonLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870801565608265450, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
+      propertyPath: trampolineLayerMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870801565608265450, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
       propertyPath: attachablePoints.Array.size
       value: 7
       objectReference: {fileID: 0}
@@ -943,6 +959,18 @@ PrefabInstance:
       propertyPath: attachablePoints.Array.data[6]
       value: 
       objectReference: {fileID: 1560212154}
+    - target: {fileID: 2870801565608265450, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
+      propertyPath: touchedPoison.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870801565608265450, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
+      propertyPath: touchedPoison.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870801565608265450, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
+      propertyPath: touchedPoison.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2870801565608265454, guid: 6bd51ac3a139bb241bbbcb56b7d82451, type: 3}
       propertyPath: grappleState.joint
       value: 

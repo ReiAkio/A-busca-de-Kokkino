@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\claud\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\claud\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_A busca de Kokkino.-379824842.00" t="ExcludeRecursive" />
+    <e p="C:\Users\claud\Documents\GitHub\A-busca-de-Kokkino\A busca de Kokkino" t="IncludeRecursive">
+      <e p="A busca de Kokkino.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="NewPlayer" t="Include">
+          <e p="PlayerFolder" t="Include">
+            <e p="InputHandler.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerData.cs" t="Include" />
+            <e p="PlayerHandler.cs" t="Include" />
+            <e p="StateMachine" t="Include">
+              <e p="StateMachine.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="DialogState.cs" t="Include" />
+                <e p="FallingState.cs" t="Include" />
+                <e p="GrappleState.cs" t="Include" />
+                <e p="IdleState.cs" t="Include" />
+                <e p="JumpState.cs" t="Include" />
+                <e p="WalkState.cs" t="Include" />
+              </e>
+              <e p="SuperStates" t="Include">
+                <e p="GroundedState.cs" t="Include" />
+                <e p="PlayerState.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="ScriptableObjects" t="Include">
+          <e p="Inventory" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="InventoryObject.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Items" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="DefaultObject.cs" t="Include" />
+              <e p="ItemObject.cs" t="Include" />
+              <e p="KeyObject.cs" t="Include" />
+              <e p="NoteObject.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="CheckPointSystem" t="Include">
+            <e p="Checkpoint.cs" t="Include" />
+          </e>
+          <e p="DialogueSystem" t="Include">
+            <e p="CharacterProfile.cs" t="Include" />
+            <e p="DialogueBase.cs" t="Include" />
+            <e p="DialogueManager.cs" t="Include" />
+            <e p="DialogueTrigger.cs" t="Include" />
+            <e p="Interactable.cs" t="Include" />
+          </e>
+          <e p="Fader" t="Include">
+            <e p="FaderController.cs" t="Include" />
+          </e>
+          <e p="HookSystem" t="Include">
+            <e p="hook_line_render.cs" t="Include" />
+            <e p="HookManager.cs" t="Include" />
+          </e>
+          <e p="Item" t="Include">
+            <e p="Item.cs" t="Include" />
+          </e>
+          <e p="Menu" t="Include">
+            <e p="MenuManager.cs" t="Include" />
+            <e p="MenuName.cs" t="Include" />
+            <e p="MenuPause.cs" t="Include" />
+            <e p="MenuStart.cs" t="Include" />
+            <e p="Rodando.cs" t="Include" />
+          </e>
+          <e p="Objects" t="Include">
+            <e p="ChildrenScripts" t="Include">
+              <e p="AppearDissapearObject.cs" t="Include" />
+              <e p="ProjectileTrap.cs" t="Include" />
+              <e p="SpriteAppear_DissapearTrap.cs" t="Include" />
+              <e p="TileAppear_DissapearTrap.cs" t="Include" />
+              <e p="triggerObject.cs" t="Include" />
+            </e>
+            <e p="GenericScripts" t="Include">
+              <e p="TrapActivation.cs" t="Include" />
+              <e p="TrapTrigger.cs" t="Include" />
+            </e>
+            <e p="ProjectileScript.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="Inativos" t="Include">
+              <e p="PlayerController.cs" t="Include" />
+              <e p="PlayerControllerRapha.cs" t="Include" />
+              <e p="PlayerManager.cs" t="Include" />
+            </e>
+            <e p="InventoryManager.cs" t="Include" />
+            <e p="PlayerAnimationController.cs" t="Include" />
+            <e p="PlayerController2.cs" t="Include" />
+          </e>
+          <e p="SaveSystem" t="Include">
+            <e p="LoadSystem.cs" t="Include" />
+            <e p="PlayerData.cs" t="Include" />
+            <e p="SaveSystem.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Tiles" t="Include">
+          <e p="BackGround" t="Include">
+            <e p="BackgroundSpriteShader.shader" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
