@@ -30,6 +30,7 @@
             </e>
           </e>
         </e>
+        <e p="PlayAudio.cs" t="Include" />
         <e p="ScriptableObjects" t="Include">
           <e p="Inventory" t="Include">
             <e p="Scripts" t="Include">
@@ -38,10 +39,7 @@
           </e>
           <e p="Items" t="Include">
             <e p="Scripts" t="Include">
-              <e p="DefaultObject.cs" t="Include" />
-              <e p="ItemObject.cs" t="Include" />
               <e p="KeyObject.cs" t="Include" />
-              <e p="NoteObject.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -81,6 +79,9 @@
               <e p="TileAppear_DissapearTrap.cs" t="Include" />
               <e p="triggerObject.cs" t="Include" />
             </e>
+            <e p="Door" t="Include">
+              <e p="Door.cs" t="Include" />
+            </e>
             <e p="GenericScripts" t="Include">
               <e p="TrapActivation.cs" t="Include" />
               <e p="TrapTrigger.cs" t="Include" />
@@ -93,7 +94,6 @@
               <e p="PlayerControllerRapha.cs" t="Include" />
               <e p="PlayerManager.cs" t="Include" />
             </e>
-            <e p="InventoryManager.cs" t="Include" />
             <e p="PlayerAnimationController.cs" t="Include" />
             <e p="PlayerController2.cs" t="Include" />
           </e>

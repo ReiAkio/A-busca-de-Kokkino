@@ -14,7 +14,7 @@ namespace PlayerFolder
         private PlayerData playerData;
         private InputHandler inputHandler;
         private PlayerHandler playerHandler;
-        
+        private AudioSource audioSource;
         
         [SerializeField]    
         private PlayerState currentState;
@@ -45,13 +45,14 @@ namespace PlayerFolder
             playerHandler = GetComponent<PlayerHandler>();
             rigidbody2D = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
+            audioSource = GetComponent<AudioSource>();
             
-            jumpState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator);
-            walkState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator);
-            idleState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator);
-            fallingState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator);
-            dialogState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator);
-            grappleState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator);
+            jumpState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator, audioSource);
+            walkState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator, audioSource);
+            idleState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator, audioSource);
+            fallingState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator, audioSource);
+            dialogState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator, audioSource);
+            grappleState.InjectInfo(playerHandler,inputHandler,playerData,this,rigidbody2D,animator, audioSource);
         }
         private void Start()
         {

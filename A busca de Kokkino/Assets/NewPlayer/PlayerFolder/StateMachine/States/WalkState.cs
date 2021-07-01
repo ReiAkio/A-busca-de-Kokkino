@@ -10,5 +10,11 @@ namespace PlayerFolder
             base.FixedUpdateState();
             
         }
+
+        public override void UpdateState()
+        {
+            base.UpdateState();
+            UpdateAudio();
+        }
     }
 }

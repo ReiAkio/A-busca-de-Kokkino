@@ -37,6 +37,7 @@ namespace PlayerFolder
             playerHandler.SetVelocityY(playerData.jumpVelocity);
             active = true;
             stopped = false;
+            UpdateAudio();
         }
 
         public override void LeaveState()

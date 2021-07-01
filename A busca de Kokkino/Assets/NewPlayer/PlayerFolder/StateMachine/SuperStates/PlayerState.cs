@@ -40,7 +40,7 @@ namespace PlayerFolder
             return audioClips[Random.Range(0, size)];
         }
 
-        private void UpdateAudio()
+        protected void UpdateAudio()
         {
             if (!audioSource.isPlaying)
             {
@@ -50,7 +50,8 @@ namespace PlayerFolder
         }
         public PlayerState(){}
 
-        public virtual void InjectInfo(PlayerHandler playerHandler,InputHandler inputHandler,PlayerData playerData,StateMachine stateMachine,Rigidbody2D rigidbody2D,Animator animator)
+        public virtual void InjectInfo(PlayerHandler playerHandler, InputHandler inputHandler, PlayerData playerData,
+            StateMachine stateMachine, Rigidbody2D rigidbody2D, Animator animator, AudioSource audioSource)
         {
             //this.stateName = stateName;
             //this.animationBoolName = animationBoolName;
@@ -60,6 +61,7 @@ namespace PlayerFolder
             this.stateMachine = stateMachine;
             this.rigidbody2D = rigidbody2D;
             this.animator = animator;
+            this.audioSource = audioSource;
         }
 
         // ReSharper disable Unity.PerformanceAnalysis

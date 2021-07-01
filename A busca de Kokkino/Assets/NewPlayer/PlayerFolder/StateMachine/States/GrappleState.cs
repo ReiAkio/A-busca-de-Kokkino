@@ -40,6 +40,7 @@ namespace PlayerFolder
             joint.enabled = true; 
             base.EnterState();
             playerHandler.isAttached = true;
+            UpdateAudio();
         }
 
         public override void LeaveState()

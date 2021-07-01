@@ -21,6 +21,17 @@ namespace PlayerFolder
             }
         }
 
+        public override void EnterState()
+        {
+            base.EnterState();
+        }
+
+        public override void LeaveState()
+        {
+            base.LeaveState();
+            UpdateAudio();
+        }
+
         protected override void PlayAnimation()
         {
             base.PlayAnimation();
