@@ -208,7 +208,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1435454097}
         m_TargetAssemblyTypeName: MenuStart, Assembly-CSharp
-        m_MethodName: HandlePlayButtonOnClickEvent
+        m_MethodName: HandleNewGameButtonOnClickEvent
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -944,6 +944,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadScene: MainCene
+  key_1: {fileID: 11400000, guid: 0d5121325a3e70e478a25d4c350b94ab, type: 2}
+  key_2: {fileID: 11400000, guid: 127bfdfdb99c5114eabdc075c47fd06b, type: 2}
+  key_3: {fileID: 11400000, guid: c88b59e84f71c0b468863c2f60dedf7d, type: 2}
+  invetory: {fileID: 11400000, guid: 3bd362af10f2e584da4cf2d47180d056, type: 2}
 --- !u!82 &1435454098
 AudioSource:
   m_ObjectHideFlags: 0
