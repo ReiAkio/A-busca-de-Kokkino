@@ -14,8 +14,19 @@ namespace PlayerFolder
         public GameObject attachedPoint;
         public SpringJoint2D joint;
         public float acceleration;
+        public LineRenderer lineRenderer;
+
+        private void UpdateLineRender()
+        {
+            var pointPosition = attachedPoint.transform.position;
+            var bodyPosition =  rigidbody2D.transform.position;
+            lineRenderer.SetPosition(0,pointPosition);
+            lineRenderer.SetPosition(1, bodyPosition);
+        }
+        
         public override void UpdateState()
         {
+            UpdateLineRender();
             var normalized = ((Vector2) attachedPoint.transform.position - rigidbody2D.position).normalized;
             rigidbody2D.transform.rotation = Quaternion.Euler(0,0,Mathf.Rad2Deg * Mathf.Atan2(normalized.y,normalized.x) - 90 );
             base.UpdateState();
@@ -34,6 +45,7 @@ namespace PlayerFolder
 
         public override void EnterState()
         {
+            lineRenderer.enabled = true;
             attachedPoint = playerHandler.nearestAttachablePoint;
             joint.connectedBody = attachedPoint.GetComponent<Rigidbody2D>();
             
@@ -41,10 +53,13 @@ namespace PlayerFolder
             base.EnterState();
             playerHandler.isAttached = true;
             UpdateAudio();
+            UpdateLineRender();
+
         }
 
         public override void LeaveState()
         {
+            lineRenderer.enabled = false;
             rigidbody2D.transform.rotation = quaternion.identity;
             joint.enabled = false;
             base.LeaveState();
