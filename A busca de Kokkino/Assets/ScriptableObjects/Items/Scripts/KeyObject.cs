@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Key Object", menuName = "Inventory System/Items/Key")]
-public class KeyObject : ItemObject
+[CreateAssetMenu(fileName = "New Key", menuName = "Inventory System/Key")]
+public class KeyObject : ScriptableObject
 {
-    public GameObject locker;
-    private void Awake()
-    {
-        type = ItemType.Key;
-    }
+    public String description;
+    public Sprite sprite;
+    public bool wasCollected = false;
 }
