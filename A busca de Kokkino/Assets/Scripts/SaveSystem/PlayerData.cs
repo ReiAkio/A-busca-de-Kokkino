@@ -9,31 +9,28 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class PlayerData
 {
     public float[] checkPointPosition;
-    public List<float[]> itemPosition = new List<float[]>();
-    
+
     /// <summary>
     /// Preenche os dados do PlayerData para posterior salvamento no arquivo.
     /// </summary>
     /// <param name="checkpointPosition"></param> posição do checkpoint que colidiu com o player.
     /// <param name="inventory"></param> referência do inventário do player.
-    public PlayerData(GameObject checkpoint, InventoryObject inventory) // Posição do último Checkpoint (lastCheckpointPos)
+    public PlayerData(GameObject checkpoint) // Posição do último Checkpoint (lastCheckpointPos)
     {
         int positionLenght = 3; // Determina o tamanho do vetor de posição
         checkPointPosition = new float[positionLenght]; // Instancia o vetor no tamanho adequado
         checkPointPosition[0] = checkpoint.transform.position.x;
         checkPointPosition[1] = checkpoint.transform.position.y;
         checkPointPosition[2] = checkpoint.transform.position.z;
-
-        // for (int i = 0; i < inventory.inventory.Count; i++) // Para cada item no inventário
-        // {
-        //     float[] posicaoDoItemX = new float[3]; // Instancia uma nova posição de item
-        //     for (int j = 0; j < inventory.inventory[i].itemPosition.Length; j++) // Para cada posição no vetor posição do item
-        //     {
-        //         // Associa a posição do item ao vetor
-        //         posicaoDoItemX[j] = inventory.inventory[i].itemPosition[j];
-        //     }
-        //     itemPosition.Add(posicaoDoItemX); // Adiciona a posição do item à lista de itens coletados
-        // }
-
+    }
+    
+    public PlayerData(Vector3 startPoint) // Posição do último Checkpoint (lastCheckpointPos)
+    {
+        Debug.Log("Resetou o save de maneira esperada");
+        int positionLenght = 3; // Determina o tamanho do vetor de posição
+        checkPointPosition = new float[positionLenght]; // Instancia o vetor no tamanho adequado
+        checkPointPosition[0] = startPoint.x;
+        checkPointPosition[1] = startPoint.y;
+        checkPointPosition[2] = startPoint.z;
     }
 }

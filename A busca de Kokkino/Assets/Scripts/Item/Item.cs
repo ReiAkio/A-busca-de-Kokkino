@@ -3,6 +3,7 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     public KeyObject key_scpobjt;
+    public InventoryObject inventory;
 
     private void Awake()
     {
@@ -12,6 +13,7 @@ public class Item : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        inventory.itemCollectedQuantity++;
         key_scpobjt.wasCollected = true;
         gameObject.SetActive(false);
     }

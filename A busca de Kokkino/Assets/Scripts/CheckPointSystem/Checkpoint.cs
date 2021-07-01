@@ -8,14 +8,14 @@ public class Checkpoint : MonoBehaviour
         //Verifica se o player colidiu com o objeto checkpoint
         if (collision.CompareTag("Player"))
         {
-            this.gameObject.SetActive(false);                                           //Desativa o checkpoint
+            gameObject.SetActive(false);                                           //Desativa o checkpoint
             saveActualPlayerInfo();                                                               //Salva o jogo
         }
     }
 
     public void saveActualPlayerInfo() // Salvar a posi��o quando chamado
     {
-        PlayerData actualData = new PlayerData(gameObject, playerInventory);
+        PlayerData actualData = new PlayerData(gameObject);
         SaveSystem.saveData(actualData);
     }
 }
