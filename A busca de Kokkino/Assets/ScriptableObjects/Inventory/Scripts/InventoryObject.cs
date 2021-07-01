@@ -44,7 +44,7 @@ public class InventoryObject : ScriptableObject
 [System.Serializable]
 public class InventorySlot
 {
-    public ItemObject item;
+    public KeyObject item;
     public float[] itemPosition;
 
     public InventorySlot(GameObject gameItem)
