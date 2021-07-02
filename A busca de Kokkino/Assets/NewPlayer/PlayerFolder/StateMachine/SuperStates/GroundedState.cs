@@ -25,13 +25,13 @@ namespace PlayerFolder
 
         public override void UpdateState()
         {
-            if (inputHandler.JumpRequest && playerHandler.CanJump())
-            {
-                stateMachine.ChangeState(stateMachine.jumpState);
-            }
-            
             if (playerHandler.isGrounded || startedCoyoteTime + playerData.coyoteMaxTime > Time.time)
             {
+                if (inputHandler.JumpRequest && playerHandler.CanJump())
+                {
+                    stateMachine.ChangeState(stateMachine.jumpState);
+                }
+                
                 if(!Mathf.Approximately(inputHandler.inputDirection.x,0f))
                 {
                     stateMachine.ChangeState(stateMachine.walkState);
@@ -45,6 +45,9 @@ namespace PlayerFolder
             {
                 stateMachine.ChangeState(stateMachine.fallingState);
             }
+            
+            
+
             base.UpdateState();
         }
 

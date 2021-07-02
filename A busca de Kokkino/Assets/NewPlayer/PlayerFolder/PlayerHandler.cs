@@ -126,7 +126,10 @@ namespace PlayerFolder
         public void SetVelocityX(float xSpeed) => rigidbody2D.velocity = new Vector2(xSpeed,rigidbody2D.velocity.y);
         public void SetWalk()
         {
-            rigidbody2D.velocity = new Vector2(playerData.speed*inputHandler.inputDirection.x,rigidbody2D.velocity.y);
+            var multiplier = playerData.normalSpeed * inputHandler.inputDirection.x;
+            var speed = ((inMud) ? (playerData.lowSpeed)
+                : (Input.GetKey(KeyCode.LeftShift) ? (playerData.fastSpeed) : playerData.normalSpeed));
+            rigidbody2D.velocity = new Vector2(speed * multiplier,rigidbody2D.velocity.y);
         }
 
         public void SetAngledWalk()
