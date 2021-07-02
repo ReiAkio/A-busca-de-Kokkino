@@ -27,10 +27,7 @@ namespace PlayerFolder
         {
             if (playerHandler.isGrounded || startedCoyoteTime + playerData.coyoteMaxTime > Time.time)
             {
-                if (inputHandler.JumpRequest && playerHandler.CanJump())
-                {
-                    stateMachine.ChangeState(stateMachine.jumpState);
-                }
+                
                 
                 if(!Mathf.Approximately(inputHandler.inputDirection.x,0f))
                 {
@@ -46,7 +43,10 @@ namespace PlayerFolder
                 stateMachine.ChangeState(stateMachine.fallingState);
             }
             
-            
+            if (inputHandler.JumpRequest && playerHandler.CanJump())
+            {
+                stateMachine.ChangeState(stateMachine.jumpState);
+            }
 
             base.UpdateState();
         }

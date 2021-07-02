@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   coyoteMaxTime: 0.5
-  maxJumpCount: 3
+  maxJumpCount: 11
   currentJumpCount: 0
+  normalSpeed: 3
+  fastSpeed: 5
+  lowSpeed: 1
   jumpVelocity: 10
-  speed: 3
   initialJumpVelocity: 20
   jumpDrag: 0.5
   trampolineForce: 20

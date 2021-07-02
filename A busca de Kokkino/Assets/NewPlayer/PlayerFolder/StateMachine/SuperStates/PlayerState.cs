@@ -69,7 +69,7 @@ namespace PlayerFolder
         {
             stateActive = true;
             animationActive = true;
-            Debug.Log("socorro");
+            //Debug.Log("socorro");
             startTime = Time.time;
             //FixedUpdateState();
             PlayAnimation();
