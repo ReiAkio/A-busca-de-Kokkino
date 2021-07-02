@@ -15,10 +15,8 @@ namespace PlayerFolder
 
         public bool jumpButton;
 
-        public bool grapplingRequest
-        {
-            get => Input.GetKey(KeyCode.E);
-        }
+        public bool grapplingRequest = false;
+        
         public bool JumpRequest
         {
             get
@@ -49,8 +47,9 @@ namespace PlayerFolder
 
         public void OnGrapple(InputAction.CallbackContext context)
         {
-            var value = context.ReadValueAsButton();
+            //var value = context.ReadValueAsButton();
             //grapplingRequest = value;
+            grapplingRequest = !grapplingRequest;
         }
     }
 }
