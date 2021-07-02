@@ -82,10 +82,6 @@ namespace PlayerFolder
             {
                 animator.Play(animationBoolName);
             }
-            else
-            {
-                Debug.Log("no animation name");
-            }
         }
 
         public virtual void LeaveState()
