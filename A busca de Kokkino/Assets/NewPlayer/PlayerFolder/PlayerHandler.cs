@@ -22,15 +22,15 @@ namespace PlayerFolder
         
         public Transform groundCheck;
         public Transform wallCheck;
-        public Transform ceilingCheck;
+        //public Transform ceilingCheck;
         
         public float groundCheckRadius = 1f;
         public float wallCheckDistance = 1f;
-        public float jumpInstantVelocity;
+        //public float jumpInstantVelocity;
         
         public bool isTouchingWall;
         public bool isTalking;
-        public float currentSpeed;
+        //public float currentSpeed;
         public bool isGrounded;
 
         public bool inGround;
@@ -42,7 +42,7 @@ namespace PlayerFolder
         public GameObject nearestAttachablePoint;
         public float maxAttachDistance;
         public bool canAttach;
-        public bool isAttached;
+       // public bool isAttached;
 
         public UnityEvent touchedMud;
         public UnityEvent touchedTrampoline;
@@ -70,7 +70,7 @@ namespace PlayerFolder
 
         #region Verify functions
         
-        private bool CeilCheck() => Physics2D.OverlapCircle(ceilingCheck.position, groundCheckRadius,groundLayerMask);
+        //private bool CeilCheck() => Physics2D.OverlapCircle(ceilingCheck.position, groundCheckRadius,groundLayerMask);
         private void GroundCheck()
         {
 
@@ -119,7 +119,7 @@ namespace PlayerFolder
             return hit;
         } 
         
-        private bool WallBackCheck() => Physics2D.Raycast(wallCheck.position, Vector2.right * -facingDirection, wallCheckDistance, groundLayerMask);
+        //private bool WallBackCheck() => Physics2D.Raycast(wallCheck.position, Vector2.right * -facingDirection, wallCheckDistance, groundLayerMask);
         #endregion
 
         #region SetSpeedFunction
@@ -131,15 +131,11 @@ namespace PlayerFolder
                 : (Input.GetKey(KeyCode.LeftShift) ? (playerData.fastSpeed) : playerData.normalSpeed));
             rigidbody2D.velocity = new Vector2(speed * multiplier,rigidbody2D.velocity.y);
         }
-
-        public void SetAngledWalk()
-        {
-        }
         public void SetVelocityY(float ySpeed) => rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,ySpeed);
 
-        public void SetVelocity(Vector2 speed) => rigidbody2D.velocity = speed;
+        //public void SetVelocity(Vector2 speed) => rigidbody2D.velocity = speed;
         
-        public void SetVelocity(float speedX,float speedY) => rigidbody2D.velocity = new Vector2(speedX,speedY);
+        //public void SetVelocity(float speedX,float speedY) => rigidbody2D.velocity = new Vector2(speedX,speedY);
         #endregion
         
         public float facingDirection = 1f;
@@ -179,15 +175,5 @@ namespace PlayerFolder
             }
         }
         
-        public void StartJump()
-        {
-            jumpInstantVelocity = playerData.initialJumpVelocity;
-        }
-        public void UpdateJump()
-        {
-            var position = rigidbody2D.position;
-            rigidbody2D.position = position + jumpInstantVelocity * Time.deltaTime * Vector2.up;
-            jumpInstantVelocity -= playerData.jumpDrag;
-        }
     }
 }

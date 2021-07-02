@@ -1,4 +1,5 @@
 ﻿
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,7 @@ namespace PlayerFolder
     public class InputHandler : MonoBehaviour
     {
         //private PlayerInput playerInput;
+        private PlayerHandler playerHandler;
         
         public Vector2 inputDirection;
         [SerializeField]
@@ -16,7 +18,12 @@ namespace PlayerFolder
         public bool jumpButton;
 
         public bool grapplingRequest = false;
-        
+
+        private void Start()
+        {
+            playerHandler = GetComponent<PlayerHandler>();
+        }
+
         public bool JumpRequest
         {
             get
@@ -48,8 +55,15 @@ namespace PlayerFolder
         public void OnGrapple(InputAction.CallbackContext context)
         {
             Debug.Log("grapple request");
-            
-            grapplingRequest = !grapplingRequest;
+
+            if (playerHandler.nearestAttachablePoint && !grapplingRequest)
+            {
+                grapplingRequest = true;
+            }
+            else
+            {
+                grapplingRequest = false;
+            }
         }
     }
 }

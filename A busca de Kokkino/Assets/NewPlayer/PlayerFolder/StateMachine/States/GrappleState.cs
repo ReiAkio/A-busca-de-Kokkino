@@ -51,7 +51,7 @@ namespace PlayerFolder
             
             joint.enabled = true; 
             base.EnterState();
-            playerHandler.isAttached = true;
+            //playerHandler.isAttached = true;
             UpdateAudio();
             UpdateLineRender();
 
@@ -63,7 +63,7 @@ namespace PlayerFolder
             rigidbody2D.transform.rotation = quaternion.identity;
             joint.enabled = false;
             base.LeaveState();
-            playerHandler.isAttached = false;
+            //playerHandler.isAttached = false;
         }
         
     }
