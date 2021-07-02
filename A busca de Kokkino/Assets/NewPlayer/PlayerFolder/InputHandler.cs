@@ -47,8 +47,8 @@ namespace PlayerFolder
 
         public void OnGrapple(InputAction.CallbackContext context)
         {
-            //var value = context.ReadValueAsButton();
-            //grapplingRequest = value;
+            Debug.Log("grapple request");
+            
             grapplingRequest = !grapplingRequest;
         }
     }

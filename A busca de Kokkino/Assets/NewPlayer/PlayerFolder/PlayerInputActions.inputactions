@@ -23,11 +23,11 @@
                 },
                 {
                     "name": "Grapple",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "6a52bc9f-c67c-480e-843f-9fd506644023",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press"
+                    "interactions": "Press(pressPoint=0.001)"
                 }
             ],
             "bindings": [

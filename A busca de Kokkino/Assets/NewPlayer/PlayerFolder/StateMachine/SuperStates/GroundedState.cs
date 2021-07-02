@@ -43,12 +43,12 @@ namespace PlayerFolder
                 stateMachine.ChangeState(stateMachine.fallingState);
             }
             
+            base.UpdateState();
+
             if (inputHandler.JumpRequest && playerHandler.CanJump())
             {
                 stateMachine.ChangeState(stateMachine.jumpState);
             }
-
-            base.UpdateState();
         }
 
         public override void AnimationTriggerReach()

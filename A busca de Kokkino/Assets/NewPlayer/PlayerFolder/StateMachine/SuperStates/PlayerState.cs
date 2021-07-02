@@ -100,9 +100,12 @@ namespace PlayerFolder
         public virtual void UpdateState()
         {
             playerHandler.UpdateNearestAttachPoint(rigidbody2D.position);
-
+            Debug.Log("bbbbbbb");
+            Debug.Log(inputHandler.grapplingRequest);
+            Debug.Log(playerHandler.canAttach);
             if (inputHandler.grapplingRequest && playerHandler.canAttach)
             {
+                Debug.Log("AAAAAAAAAAA");
                 stateMachine.ChangeState(stateMachine.grappleState);
             }
             
