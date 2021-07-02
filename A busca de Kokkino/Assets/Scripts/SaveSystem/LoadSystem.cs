@@ -1,4 +1,5 @@
 using System;
+using PlayerFolder;
 using UnityEngine;
 
 public class LoadSystem : MonoBehaviour
@@ -14,6 +15,7 @@ public class LoadSystem : MonoBehaviour
     {
         PlayerData reloadedData = SaveSystem.loadData();
         GameObject player = GameObject.FindWithTag(playerTag);
+        player.GetComponent<InputHandler>().grapplingRequest = false;
         Vector3 position = new Vector3(reloadedData.checkPointPosition[0], reloadedData.checkPointPosition[1], reloadedData.checkPointPosition[2]);
         player.transform.position = position;
         GameObject[] checkpoints = GameObject.FindGameObjectsWithTag(checkpointTag);
