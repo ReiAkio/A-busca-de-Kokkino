@@ -28,8 +28,6 @@ namespace PlayerFolder
         public float wallCheckDistance = 1f;
         public float jumpInstantVelocity;
         
-        [Range(1,100)]
-        public float trampolineForce = 20f;
         public bool isTouchingWall;
         public bool isTalking;
         public float currentSpeed;
@@ -92,14 +90,22 @@ namespace PlayerFolder
             if (inPoison &&lastFramePoison !=inPoison )
             {
                 touchedPoison.Invoke();
+                LoadSystem.Reload();
             }
             inTrampoline = Physics2D.OverlapCircle(position, groundCheckRadius, trampolineLayerMask);
             if (inTrampoline &&lastFrameTrampoline !=inTrampoline )
             {
-                rigidbody2D.AddForce(Vector2.up*trampolineForce);
+                //Debug.Log("fuahsfhadfjgshf");
+                rigidbody2D.AddForce(Vector2.up * playerData.trampolineForce ,ForceMode2D.Impulse);
                 touchedTrampoline.Invoke();
             }
             isGrounded = inGround || inMud || inPoison;
+            
+            if (isGrounded)
+            {
+                //Debug.Log("grounded");
+                playerData.currentJumpCount = 0;
+            }
         }
 
         private bool WallFrontCheck()
@@ -148,7 +154,9 @@ namespace PlayerFolder
 
         public bool CanJump()
         {
-            return true;
+            var value = playerData.maxJumpCount > playerData.currentJumpCount;
+            Debug.Log(value + " can jump");
+            return value;
         }
 
         public void UpdateNearestAttachPoint(Vector3 PlayerPosition)

@@ -33,6 +33,7 @@ namespace PlayerFolder
             
         public override void EnterState()
         {
+            playerData.currentJumpCount ++;
             base.EnterState();
             playerHandler.SetVelocityY(playerData.jumpVelocity);
             active = true;
